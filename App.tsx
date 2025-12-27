@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { FloatingButtons } from './components/FloatingButtons';
@@ -41,6 +41,8 @@ const App: React.FC = () => {
               element={<LocationsList title="Cidades Atendidas na RMC" items={CIDADES} type="cidades" />} 
             />
             <Route path="/contato" element={<Home />} />
+            {/* Fallback para home em caso de rota não encontrada */}
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
 

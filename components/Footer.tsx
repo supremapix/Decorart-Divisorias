@@ -97,8 +97,8 @@ export const Footer: React.FC = () => {
           <div className="text-xs text-gray-500 flex flex-col md:flex-row items-center justify-center gap-2">
             <span>© {new Date().getFullYear()} Decorart Divisórias.</span>
             <span className="flex items-center">
-              Desenvolvido <Heart size={24} className="mx-2 text-red-600 fill-red-600 animate-[heartBeat_1.3s_ease-in-out_infinite]" /> por 
-              <a href="https://supremamidia.com.br" target="_blank" className="ml-2 font-black text-blue-900 hover:text-gold uppercase">Suprema Mídia</a>
+              Desenvolvido <Heart size={32} className="mx-2 text-red-600 fill-red-600 heart-beat-giant" /> por 
+              <a href="https://supremamidia.com.br" target="_blank" className="ml-2 font-black text-blue-900 hover:text-gold uppercase tracking-tighter text-lg">Suprema Mídia</a>
             </span>
           </div>
         </div>

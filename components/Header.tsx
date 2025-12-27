@@ -3,22 +3,18 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Phone, MessageCircle } from 'lucide-react';
 import { BUSINESS_INFO } from '../constants';
+import { Logo } from './Logo';
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo - GIF Animado com Interação */}
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Logo Vetorial com Interação */}
         <Link to="/" className="group flex items-center">
-          <div className="transform scale-[1.8] md:scale-[2.2] origin-left ml-4 py-2 transition-all duration-300 group-hover:scale-[2.1] md:group-hover:scale-[2.4] group-active:scale-[1.7] md:group-active:scale-[2]">
-             <img 
-               src="https://decorartdivisorias.com.br/assets/images/decorart-divisorias-sao-jose-dos-pinhais-1.gif" 
-               alt="Decorart Divisórias" 
-               className="h-10 w-auto object-contain bg-transparent"
-               loading="eager"
-             />
+          <div className="transition-all duration-300 group-hover:scale-105 group-active:scale-95">
+             <Logo className="h-10 md:h-12" />
           </div>
         </Link>
 

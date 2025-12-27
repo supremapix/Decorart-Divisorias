@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { BUSINESS_INFO } from '../constants';
 import { Instagram, Facebook, MessageSquare, Mail, Phone, MapPin, ArrowRight, Heart } from 'lucide-react';
+import { Logo } from './Logo';
 
 export const Footer: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,11 +28,8 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           <div className="space-y-8">
             <Link to="/" className="group block">
-              <img 
-                src="https://decorartdivisorias.com.br/assets/images/decorart-divisorias-sao-jose-dos-pinhais-1.gif" 
-                alt="Decorart Divisórias" 
-                className="w-full max-w-[280px] object-contain transition-transform group-hover:scale-105"
-              />
+              {/* Logo Vetorial no Rodapé */}
+              <Logo className="h-12 md:h-14 transition-transform group-hover:scale-105" />
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed font-medium">
               Especialistas em divisórias e drywall com mais de 15 anos de tradição em Curitiba e Região Metropolitana. Qualidade garantida direto da fábrica.
@@ -98,7 +96,7 @@ export const Footer: React.FC = () => {
             <span>© {new Date().getFullYear()} Decorart Divisórias.</span>
             <span className="flex items-center">
               Desenvolvido <Heart size={32} className="mx-2 text-red-600 fill-red-600 heart-beat-giant" /> por 
-              <a href="https://supremamidia.com.br" target="_blank" className="ml-2 font-black text-blue-900 hover:text-gold uppercase tracking-tighter text-lg">Suprema Mídia</a>
+              <a href="https://supremamidia.com.br" target="_blank" className="ml-2 font-black text-blue-950 hover:text-gold uppercase tracking-tighter text-lg">Suprema Mídia</a>
             </span>
           </div>
         </div>

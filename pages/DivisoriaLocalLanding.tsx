@@ -108,36 +108,87 @@ export const DivisoriaLocalLanding: React.FC<LandingProps> = ({ slugKey }) => {
       />
 
       {/* Hero Dobra Principal com Fundo Real */}
-      <section className="relative py-24 md:py-32 bg-slate-950 text-white overflow-hidden">
+      <section className="relative py-20 md:py-24 bg-slate-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <SafeImage src={config.heroImg} alt={config.h1} className="w-full h-full object-cover opacity-25" />
+          <SafeImage src={config.heroImg} alt={config.h1} className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent"></div>
         </div>
-        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl">
-          <div className="inline-flex items-center bg-gold/20 text-gold px-5 py-2 rounded-full mb-6 font-black text-xs md:text-sm border border-gold/40 tracking-widest uppercase">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl text-center">
+          <div className="inline-flex items-center bg-gold/20 text-gold px-5 py-2 rounded-full mb-6 font-black text-xs md:text-sm border border-gold/40 tracking-widest uppercase shadow-lg">
             <Building2 size={16} className="mr-2" /> {config.badge}
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-black mb-6 uppercase tracking-tight leading-tight">
             {config.h1}
           </h1>
-          <p className="text-lg md:text-2xl text-slate-300 mb-10 font-medium leading-relaxed max-w-3xl">
+          <p className="text-lg md:text-xl text-slate-300 mb-8 font-medium leading-relaxed max-w-3xl mx-auto">
             {config.subtitle}
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             <a 
               href={BUSINESS_INFO.whatsapp} 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-gold hover:bg-yellow-600 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider shadow-xl transition-all flex items-center active:scale-95"
             >
-              <MessageCircle size={18} className="mr-2" /> Orçamento
+              <MessageCircle size={18} className="mr-2" /> Solicitar Orçamento no WhatsApp
             </a>
             <a 
               href={`tel:${BUSINESS_INFO.phones[0].replace(/\D/g, '')}`} 
               className="bg-slate-900 border border-white/20 text-white hover:border-gold px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider transition-all flex items-center"
             >
-              <PhoneCall size={18} className="mr-2 text-gold" /> Ligar
+              <PhoneCall size={18} className="mr-2 text-gold" /> Ligar Agora
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* MOSTRUÁRIO DE CARA - FOTOS DOS PROJETOS ENTREGUES */}
+      <section className="bg-slate-900 py-12 border-b border-gold/20 text-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <span className="text-xs font-black uppercase tracking-widest text-gold bg-gold/20 px-3 py-1 rounded-full border border-gold/30">
+              PROJETOS EXECUTADOS EM CURITIBA
+            </span>
+            <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-white mt-3">
+              Fotos Reais dos Nossos Trabalhos
+            </h2>
+            <p className="text-slate-400 text-xs sm:text-sm mt-1">
+              Confira a qualidade de acabamento, alinhamento e rapidez de instalação da Decorart Divisórias.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              {
+                url: "https://scontent.xx.fbcdn.net/v/t39.105495-1/772656235_1361215096222657_3087452710502216900_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=101&_nc_ohc=J5iLS93ocrwQ7kNvwF0oj62&sdl=0&ccb=14-4&oh=00_AQGOo_YZeGegJZ_QlNBgAUuIoyc6G4f4klChZt6uSb7Hig&oe=6A7E877C&_nc_sid=a21977",
+                title: "Divisória Eucatex Modular",
+                sub: "Escritórios & Recepções"
+              },
+              {
+                url: "https://scontent.xx.fbcdn.net/v/t39.105495-1/771677490_1048725951204222_7232037595499993818_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=5Rz4TTTHnTUQ7kNvwEinKJb&sdl=0&ccb=14-4&oh=00_AQFm-Og6cjxS89fvxeC1rEvsEHgJxH5WxklGn1u-YuFuqQ&oe=6A7E85AD&_nc_sid=a21977",
+                title: "Divisória Corporativa com Vidro",
+                sub: "Salas de Reunião Batel/Centro"
+              },
+              {
+                url: "https://scontent.xx.fbcdn.net/v/t39.105495-1/768592673_1276546311117667_6661732395481517499_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=107&_nc_ohc=aqARHDbivFMQ7kNvwEohJth&sdl=0&ccb=14-4&oh=00_AQGkgaa-MwJaiA_JSUEhVq_YVj0voaFttMSxfcN4WN-uXw&oe=6A7E70E3&_nc_sid=a21977",
+                title: "Parede Drywall Acústico",
+                sub: "Consultórios & Residências"
+              },
+              {
+                url: "https://scontent.xx.fbcdn.net/v/t39.105495-1/771589414_2087265455498189_8600494230422100395_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=105&_nc_ohc=-JkxH4EeOncQ7kNvwHe1zbS&sdl=0&ccb=14-4&oh=00_AQGHiEOYqVJs4kiJphlHQ7EC45Jps95QfuJg9Filswfy6w&oe=6A7E7D1C&_nc_sid=a21977",
+                title: "Divisórias Comerciais",
+                sub: "Lojas & Pavilhões Industriais"
+              }
+            ].map((p, idx) => (
+              <div key={idx} className="group relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 hover:border-gold shadow-lg transition-all bg-slate-950">
+                <SafeImage src={p.url} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90" />
+                <div className="absolute bottom-3 left-3 right-3 text-white">
+                  <h3 className="font-black text-sm uppercase text-gold leading-tight">{p.title}</h3>
+                  <p className="text-[11px] text-slate-300 font-medium">{p.sub}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

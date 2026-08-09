@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="45%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#856404" />
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#9C7C13" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)" />
+  <rect x="12" y="12" width="488" height="488" rx="108" fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-opacity="0.5" />
+
+  <!-- Partition Icon Main Group -->
+  <g transform="translate(64, 64)">
+    <!-- Outer Frame of Partition -->
+    <rect x="16" y="16" width="352" height="352" rx="40" fill="none" stroke="url(#goldGrad)" stroke-width="24" filter="url(#glow)" />
+
+    <!-- 3 Partition Panels (Eucatex/Drywall/Modular) -->
+    <rect x="52" y="52" width="80" height="280" rx="12" fill="url(#panelGrad)" />
+    <rect x="152" y="52" width="80" height="280" rx="12" fill="url(#panelGrad)" opacity="0.85" />
+    <rect x="252" y="52" width="80" height="280" rx="12" fill="url(#panelGrad)" opacity="0.70" />
+
+    <!-- Glass Visor Line -->
+    <line x1="52" y1="168" x2="332" y2="168" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-dasharray="20 12" opacity="0.95" />
+  </g>
+</svg>

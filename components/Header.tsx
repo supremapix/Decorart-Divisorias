@@ -19,12 +19,13 @@ export const Header: React.FC = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center space-x-10 font-black text-blue-950 uppercase tracking-tighter text-sm">
+        <nav className="hidden lg:flex items-center space-x-8 font-black text-blue-950 uppercase tracking-tighter text-sm">
           <Link to="/" className="hover:text-gold transition-colors">Home</Link>
+          <Link to="/divisorias-curitiba" className="hover:text-gold transition-colors text-gold">Divisórias Curitiba</Link>
           <Link to="/servicos" className="hover:text-gold transition-colors">Serviços</Link>
+          <Link to="/artigos" className="hover:text-gold transition-colors">Artigos</Link>
           <Link to="/bairros" className="hover:text-gold transition-colors">Bairros</Link>
           <Link to="/cidades" className="hover:text-gold transition-colors">Cidades</Link>
-          <Link to="/contato" className="hover:text-gold transition-colors">Contato</Link>
         </nav>
 
         {/* Contact Info */}
@@ -50,10 +51,11 @@ export const Header: React.FC = () => {
         <div className="lg:hidden bg-white border-t border-gray-100 p-6 space-y-6 shadow-2xl animate-in slide-in-from-top duration-300">
           <nav className="flex flex-col space-y-4 font-black text-blue-950 uppercase tracking-tighter">
             <Link to="/" onClick={() => setIsOpen(false)} className="py-2 border-b border-gray-50">Home</Link>
+            <Link to="/divisorias-curitiba" onClick={() => setIsOpen(false)} className="py-2 border-b border-gray-50 text-gold">Divisórias Curitiba</Link>
             <Link to="/servicos" onClick={() => setIsOpen(false)} className="py-2 border-b border-gray-50">Serviços</Link>
+            <Link to="/artigos" onClick={() => setIsOpen(false)} className="py-2 border-b border-gray-50">Artigos & Guias</Link>
             <Link to="/bairros" onClick={() => setIsOpen(false)} className="py-2 border-b border-gray-50">Bairros</Link>
             <Link to="/cidades" onClick={() => setIsOpen(false)} className="py-2 border-b border-gray-50">Cidades</Link>
-            <Link to="/contato" onClick={() => setIsOpen(false)} className="py-2 border-b border-gray-50">Contato</Link>
           </nav>
           <div className="pt-4 flex flex-col space-y-4">
             <a href={`tel:${BUSINESS_INFO.phones[0].replace(/\D/g, '')}`} className="flex items-center justify-center text-blue-950 font-black p-4 bg-gray-50 rounded-xl">

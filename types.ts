@@ -35,3 +35,14 @@ export interface LocationData {
   slug: string;
   type: 'bairro' | 'cidade';
 }
+
+export interface Article {
+  slug: string;
+  titulo: string;
+  resumo: string;
+  conteudo: string;
+  data: string;
+  imagem: string;
+  tempoLeitura: string;
+  categoria: string;
+}

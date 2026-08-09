@@ -78,14 +78,37 @@ export const Footer: React.FC = () => {
 
           <div>
             <h3 className="text-xl font-black mb-10 border-l-4 border-gold pl-4 uppercase tracking-tighter text-blue-900">Links Rápidos</h3>
-            <ul className="space-y-4 text-gray-700 text-sm">
-              {['Home', 'Servicos', 'Bairros', 'Cidades', 'Contato'].map(link => (
-                <li key={link}>
-                  <Link to={link === 'Home' ? '/' : `/${link.toLowerCase()}`} className="hover:text-gold flex items-center transition-colors group">
-                    <ArrowRight size={14} className="mr-3 text-gold group-hover:translate-x-1" /> {link}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-4 text-gray-700 text-sm font-semibold">
+              <li>
+                <Link to="/" className="hover:text-gold flex items-center transition-colors group">
+                  <ArrowRight size={14} className="mr-3 text-gold group-hover:translate-x-1" /> Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/divisorias-curitiba" className="hover:text-gold flex items-center transition-colors group font-bold text-gold">
+                  <ArrowRight size={14} className="mr-3 text-gold group-hover:translate-x-1" /> Divisórias Curitiba
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicos" className="hover:text-gold flex items-center transition-colors group">
+                  <ArrowRight size={14} className="mr-3 text-gold group-hover:translate-x-1" /> Serviços
+                </Link>
+              </li>
+              <li>
+                <Link to="/artigos" className="hover:text-gold flex items-center transition-colors group">
+                  <ArrowRight size={14} className="mr-3 text-gold group-hover:translate-x-1" /> Artigos & Guias
+                </Link>
+              </li>
+              <li>
+                <Link to="/bairros" className="hover:text-gold flex items-center transition-colors group">
+                  <ArrowRight size={14} className="mr-3 text-gold group-hover:translate-x-1" /> Bairros
+                </Link>
+              </li>
+              <li>
+                <Link to="/cidades" className="hover:text-gold flex items-center transition-colors group">
+                  <ArrowRight size={14} className="mr-3 text-gold group-hover:translate-x-1" /> Cidades
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

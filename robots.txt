@@ -1,4 +1,5 @@
 
 User-agent: *
 Allow: /
-Sitemap: https://decorartdivisorias.com.br/sitemap.xml
+
+Sitemap: https://www.decorartdivisorias.com.br/sitemap.xml

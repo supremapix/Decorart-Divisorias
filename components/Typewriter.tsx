@@ -2,11 +2,11 @@
 import React, { useState, useEffect } from 'react';
 
 const words = [
-  "Divisórias Profissionais para Seu Espaço",
-  "Transforme Ambientes com Qualidade",
-  "Soluções em Drywall e Divisórias",
-  "Instalação Rápida e Garantida",
-  "Preço Justo, Colocação Imediata!"
+  "Divisórias em Curitiba | Eucatex e Drywall",
+  "Especialista em Divisórias para Escritórios",
+  "Divisórias Comerciais e Corporativas",
+  "Divisórias de Eucatex com Instalação Rápida",
+  "Orçamento de Divisórias Direto de Fábrica!"
 ];
 
 export const Typewriter: React.FC = () => {

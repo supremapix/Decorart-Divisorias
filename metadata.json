@@ -1,7 +1,10 @@
 {
-  "name": "Decorart Divisórias - Especialista em Drywall e Divisórias",
-  "description": "Soluções completas em divisórias Eucatex, drywall, forros PVC e sancas de gesso em Curitiba e Região Metropolitana.",
+  "name": "Decorart Divisórias - Especialista em Divisórias em Curitiba",
+  "description": "Empresa especializada em divisórias Eucatex, divisórias para escritórios, divisórias comerciais e em drywall em Curitiba e Região Metropolitana.",
   "requestFramePermissions": [
     "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
   ]
 }

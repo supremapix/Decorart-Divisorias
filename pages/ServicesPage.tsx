@@ -1,82 +1,94 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SERVICES } from '../constants';
+import { SERVICES, BUSINESS_INFO } from '../constants';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import { SafeImage } from '../components/SafeImage';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react';
+
+const HERO_BG = "https://scontent.xx.fbcdn.net/v/t39.105495-1/771677490_1048725951204222_7232037595499993818_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=5Rz4TTTHnTUQ7kNvwEinKJb&sdl=0&ccb=14-4&oh=00_AQFm-Og6cjxS89fvxeC1rEvsEHgJxH5WxklGn1u-YuFuqQ&oe=6A7E85AD&_nc_sid=a21977";
 
 export const ServicesPage: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen font-sans">
       <EnhancedSEO 
         title="Divisórias e Drywall em Curitiba: Nossos Serviços | Decorart"
         description="Conheça nossas soluções em divisórias eucatex, drywall profissional, forros PVC e sancas. Especialistas em transformações de ambientes com 15 anos de tradição em Curitiba."
         canonical="/servicos"
       />
 
-      {/* Hero da Página de Serviços */}
-      <section className="bg-blue-950 py-24 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+      {/* Hero da Página de Serviços Elegante com Imagem de Fundo Real */}
+      <section className="bg-slate-950 py-24 md:py-32 text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <SafeImage 
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80" 
-            alt="Infraestrutura e Materiais Decorart Divisórias" 
-            className="w-full h-full object-cover" 
+            src={HERO_BG} 
+            alt="Infraestrutura e Materiais Decorart Divisórias em Curitiba" 
+            className="w-full h-full object-cover opacity-25" 
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent"></div>
         </div>
-        <div className="container mx-auto px-4 relative z-10 text-center">
+
+        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-4xl">
+          <motion.span 
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-gold font-black uppercase tracking-widest text-xs mb-3 block"
+          >
+            Linha Completa de Divisórias
+          </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-black mb-6 text-gold uppercase tracking-tighter"
+            className="text-3xl md:text-5xl font-black mb-6 text-white uppercase tracking-tight"
           >
-            Soluções Profissionais para seu Espaço
+            Soluções Profissionais em Divisórias
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-xl text-blue-200 max-w-2xl mx-auto"
+            transition={{ delay: 0.15 }}
+            className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed"
           >
-            Especialistas em transformar ambientes comerciais e residenciais com agilidade técnica e acabamento de alto padrão.
+            Especialistas em transformar ambientes comerciais e corporativos com agilidade técnica e acabamento de alto padrão em Curitiba.
           </motion.p>
         </div>
       </section>
 
       {/* Grid de Serviços */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <section className="py-20 md:py-28 bg-slate-50">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {SERVICES.map((service, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="flex flex-col lg:flex-row bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 group"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="flex flex-col lg:flex-row bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200/80 group hover:shadow-2xl transition-all"
               >
-                <div className="lg:w-1/2 aspect-video lg:aspect-auto overflow-hidden bg-gray-100">
+                <div className="lg:w-1/2 aspect-video lg:aspect-auto overflow-hidden bg-slate-100">
                   <SafeImage 
-                    src={`${service.imagem}&auto=format&q=80`} 
+                    src={service.imagem} 
                     alt={`Instalação de ${service.titulo} pela Decorart em Curitiba`} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
                 </div>
-                <div className="lg:w-1/2 p-8 flex flex-col justify-center">
-                  <div className="flex items-center text-gold mb-4 font-bold uppercase tracking-widest text-xs">
-                    <CheckCircle size={14} className="mr-2" /> Qualidade Garantida
+                <div className="lg:w-1/2 p-8 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center text-gold mb-3 font-bold uppercase tracking-wider text-xs">
+                      <CheckCircle size={14} className="mr-1.5" /> Garantia de Fábrica
+                    </div>
+                    <h2 className="text-2xl font-bold text-slate-900 mb-3">{service.titulo}</h2>
+                    <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+                      {service.texto}
+                    </p>
                   </div>
-                  <h2 className="text-2xl font-bold text-blue-950 mb-4">{service.titulo}</h2>
-                  <p className="text-gray-600 mb-8 leading-relaxed">
-                    {service.texto}
-                  </p>
                   <Link 
                     to={`/servicos/${service.slug}`} 
-                    className="inline-flex items-center bg-gold text-white px-6 py-3 rounded-full font-bold hover:bg-yellow-800 transition-colors w-fit shadow-md"
+                    className="inline-flex items-center justify-center bg-slate-900 hover:bg-gold text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-wider transition-all w-fit shadow-md"
                   >
-                    Ver Detalhes do Serviço <ArrowRight size={18} className="ml-2" />
+                    Detalhes <ArrowRight size={14} className="ml-2" />
                   </Link>
                 </div>
               </motion.div>
@@ -86,13 +98,19 @@ export const ServicesPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gold py-16 text-white text-center">
+      <section className="bg-slate-950 py-16 text-white text-center border-t border-gold/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-black mb-6 uppercase tracking-tighter">Qualidade de fábrica para sua reforma</h2>
-          <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">Solicite hoje mesmo uma visita técnica gratuita para sua empresa ou residência em Curitiba e Região.</p>
-          <Link to="/contato" className="bg-white text-gold px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all inline-block hover:scale-105">
-            Falar com um Especialista
-          </Link>
+          <h2 className="text-2xl md:text-4xl font-black mb-4 uppercase tracking-tight">Qualidade para seu projeto</h2>
+          <p className="text-base md:text-lg mb-8 text-slate-300 max-w-2xl mx-auto">Solicite hoje mesmo seu orçamento sem compromisso em Curitiba e Região.</p>
+          <a 
+            href={BUSINESS_INFO.whatsapp} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gold hover:bg-yellow-600 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider transition-all inline-flex items-center shadow-xl active:scale-95"
+          >
+            <MessageCircle size={18} className="mr-2" />
+            WhatsApp
+          </a>
         </div>
       </section>
     </div>

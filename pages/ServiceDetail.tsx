@@ -175,7 +175,7 @@ export const ServiceDetail: React.FC = () => {
                     target="_blank"
                     className="block w-full text-center bg-gold text-white py-3 rounded-xl font-bold hover:bg-yellow-800 transition-colors shadow-md uppercase tracking-tighter"
                   >
-                    Chamar no WhatsApp
+                    WhatsApp
                   </a>
                 </div>
               </div>

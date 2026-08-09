@@ -152,11 +152,11 @@ export const LocationDetail: React.FC = () => {
               Transformamos seu ambiente no {name} com agilidade industrial e acabamento residencial de alto padrão.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href={BUSINESS_INFO.whatsapp} target="_blank" className="bg-gold hover:bg-yellow-800 text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl transition-all flex items-center animate-bounce">
-                <MessageCircle className="mr-3" /> ORÇAMENTO NO {name.toUpperCase()}
+              <a href={BUSINESS_INFO.whatsapp} target="_blank" rel="noopener noreferrer" className="bg-gold hover:bg-yellow-600 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider shadow-2xl transition-all flex items-center active:scale-95">
+                <MessageCircle className="mr-2" size={18} /> Orçamento
               </a>
-              <a href={`tel:${BUSINESS_INFO.phones[0].replace(/\D/g, '')}`} className="bg-white text-blue-950 px-10 py-5 rounded-2xl font-black text-lg shadow-2xl transition-all flex items-center hover:bg-gray-100">
-                <PhoneCall className="mr-3" /> LIGAR AGORA
+              <a href={`tel:${BUSINESS_INFO.phones[0].replace(/\D/g, '')}`} className="bg-slate-900 border border-white/20 text-white hover:border-gold px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider shadow-2xl transition-all flex items-center">
+                <PhoneCall className="mr-2 text-gold" size={18} /> Ligar
               </a>
             </div>
           </motion.div>
@@ -212,8 +212,8 @@ export const LocationDetail: React.FC = () => {
                 <p className="text-gray-600 mb-8 leading-relaxed text-lg">
                   Nossas equipes são treinadas para atuar em condomínios e prédios comerciais no {name}, respeitando todas as normas de segurança e horários de silêncio. Se você precisa de uma obra rápida, limpa e com nota fiscal, a Decorart é sua melhor escolha em {name}.
                 </p>
-                <a href={BUSINESS_INFO.whatsapp} className="inline-flex items-center bg-gold text-white px-8 py-4 rounded-xl font-black hover:bg-yellow-800 transition-all shadow-lg uppercase tracking-tighter">
-                  SOLICITAR VISITA TÉCNICA NO {name.toUpperCase()} <ArrowRight className="ml-2" />
+                <a href={BUSINESS_INFO.whatsapp} target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-gold text-white px-6 py-3.5 rounded-2xl font-black text-xs hover:bg-yellow-600 transition-all shadow-lg uppercase tracking-wider active:scale-95">
+                  WhatsApp <ArrowRight className="ml-2" />
                 </a>
               </div>
             </div>

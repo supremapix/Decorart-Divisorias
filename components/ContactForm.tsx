@@ -112,7 +112,7 @@ export const ContactForm: React.FC = () => {
         type="submit" 
         className="w-full bg-gold hover:bg-yellow-800 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-[1.02] active:scale-95 shadow-md flex items-center justify-center"
       >
-        Enviar Solicitação via WhatsApp
+        Enviar Orçamento
       </button>
     </form>
   );

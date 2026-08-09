@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { FloatingButtons } from './components/FloatingButtons';
+import { FloatingActions } from './components/FloatingActions';
 import { Home } from './pages/Home';
 import { LocationDetail } from './pages/LocationDetail';
 import { LocationsList } from './pages/LocationsList';
@@ -66,7 +66,7 @@ const App: React.FC = () => {
         </main>
 
         <Footer />
-        <FloatingButtons />
+        <FloatingActions />
       </div>
     </Router>
   );

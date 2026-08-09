@@ -1,44 +1,31 @@
-
 import React from 'react';
+import { SafeImage } from './SafeImage';
 
 interface LogoProps {
   className?: string;
   variant?: 'light' | 'dark';
 }
 
+export const OFFICIAL_LOGO_URL = "https://cdn.fbsbx.com/v/t65.102178-21/771997381_1356068486114833_3628982940767296904_n.jpg/decorart_branca_transparente.webp?_nc_ht=cdn.fbsbx.com&_nc_ohc=icw6HMp8djgQ7kNvwGy994t&sdl=0&ccb=14-4&oh=00_AQGF29NFli7wMmGrY7xdyZoAWJtNsSalRlZNu3RPaxTz2w&oe=6A7A8F9A&_nc_sid=4ee932";
+
 export const Logo: React.FC<LogoProps> = ({ className = "h-12", variant = 'dark' }) => {
   return (
-    <div className={`flex flex-col items-start leading-none select-none ${className}`}>
-      {/* Texto Superior: DECORART */}
-      <div 
-        className="font-black italic tracking-tighter" 
-        style={{ 
-          color: '#9C7C13', 
-          fontSize: '2.2em',
-          fontStyle: 'italic',
-          transform: 'skewX(-5deg)'
-        }}
-      >
-        DECORART
-      </div>
-      
-      {/* Linha Inferior: Design + DIVISÓRIAS */}
-      <div className="flex items-center w-full mt-[-0.2em]">
-        {/* As 3 Linhas de Design */}
-        <div className="flex flex-col gap-[2px] mr-2 flex-grow max-w-[80px]">
-          <div className="h-[2px] w-full bg-black"></div>
-          <div className="h-[2px] w-full bg-black"></div>
-          <div className="h-[2px] w-full bg-black"></div>
-        </div>
-        
-        {/* Texto DIVISÓRIAS */}
-        <div 
-          className="font-bold tracking-[0.2em] text-black"
-          style={{ fontSize: '0.9em' }}
-        >
-          DIVISÓRIAS
-        </div>
-      </div>
+    <div className={`relative inline-flex items-center justify-center select-none overflow-hidden rounded-xl group ${className}`}>
+      {/* Halo de luz radial limpo e concentrado diretamente no centro */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-gold/15 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+      {/* Imagem do Logo com Iluminação Direta de Alta Definição */}
+      <SafeImage
+        src={OFFICIAL_LOGO_URL}
+        alt="Decorart Divisórias"
+        className="relative z-10 h-full w-auto object-contain transition-all duration-300 drop-shadow-[0_0_12px_rgba(255,255,255,0.45)] drop-shadow-[0_0_20px_rgba(212,175,55,0.25)] group-hover:drop-shadow-[0_0_24px_rgba(255,255,255,0.7)] group-hover:scale-[1.02]"
+        fallbackClassName="h-10 w-36 bg-transparent border-none text-gold font-bold"
+      />
+
+      {/* Feixe de Luz de Reflexo Metálico Elegante (Passa da esquerda para a direita no hover) */}
+      <div className="absolute inset-0 z-20 pointer-events-none -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
     </div>
   );
 };
+
+

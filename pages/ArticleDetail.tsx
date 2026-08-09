@@ -124,9 +124,9 @@ export const ArticleDetail: React.FC = () => {
                   href={BUSINESS_INFO.whatsapp} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-gold hover:bg-yellow-800 text-white font-black px-8 py-4 rounded-xl shadow-lg transition-all"
+                  className="inline-flex items-center bg-gold hover:bg-yellow-800 text-white font-black px-6 py-3.5 rounded-2xl shadow-lg transition-all text-xs uppercase tracking-wider"
                 >
-                  <MessageCircle className="mr-2" /> Solicit e Orçamento de Divisórias
+                  <MessageCircle className="mr-2" size={16} /> WhatsApp
                 </a>
               </div>
             </div>

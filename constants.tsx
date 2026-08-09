@@ -16,7 +16,7 @@ export const SERVICES: Service[] = [
   {
     slug: "divisorias-eucatex",
     categoria: "partitions",
-    imagem: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/772656235_1361215096222657_3087452710502216900_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=101&_nc_ohc=J5iLS93ocrwQ7kNvwF0oj62&sdl=0&ccb=14-4&oh=00_AQGOo_YZeGegJZ_QlNBgAUuIoyc6G4f4klChZt6uSb7Hig&oe=6A7E877C&_nc_sid=a21977",
     titulo: "Divisórias em Eucatex em Curitiba",
     texto: "Divisórias modulares Eucatex de alta durabilidade e montagem limpa. Solução ideal para escritórios, salas comerciais, clínicas e empresas.",
     descricaoDetalhada: "As divisórias em Eucatex (Eucplac/Naval) são a solução líder absoluto para subdivisão de ambientes corporativos e comerciais em Curitiba e Região Metropolitana. Com postas por painéis modulares de 35mm e perfis de aço galvanizado estrutural, oferecem rápida montagem, excelente isolamento termoacústico e reaproveitamento total em caso de mudança de layout. Permitem rápida criação de salas de reunião, gerências e recepções sem a sujeira de obras tradicionais.",
@@ -25,7 +25,7 @@ export const SERVICES: Service[] = [
   {
     slug: "divisorias-escritorio",
     categoria: "partitions",
-    imagem: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1200&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/771677490_1048725951204222_7232037595499993818_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=5Rz4TTTHnTUQ7kNvwEinKJb&sdl=0&ccb=14-4&oh=00_AQFm-Og6cjxS89fvxeC1rEvsEHgJxH5WxklGn1u-YuFuqQ&oe=6A7E85AD&_nc_sid=a21977",
     titulo: "Divisórias para Escritórios em Curitiba",
     texto: "Projetos e instalação sob medida de divisórias corporativas para salas de reunião, escritórios, consultórios e recepções no Batel, Centro e toda Curitiba.",
     descricaoDetalhada: "Especialmente desenvolvidas para o mercado corporativo de Curitiba, nossas divisórias para escritórios combinam estética refinada, privacidade acústica e versatilidade espacial. Disponíveis em acabamentos amadeirados, neutros ou com módulos de vidro, permitem organizar departamentos, estantes de trabalho e salas executivas com máximo aproveitamento de luz natural e conforto para a equipe.",
@@ -34,7 +34,7 @@ export const SERVICES: Service[] = [
   {
     slug: "divisorias-comerciais",
     categoria: "partitions",
-    imagem: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/771589414_2087265455498189_8600494230422100395_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=105&_nc_ohc=-JkxH4EeOncQ7kNvwHe1zbS&sdl=0&ccb=14-4&oh=00_AQGHiEOYqVJs4kiJphlHQ7EC45Jps95QfuJg9Filswfy6w&oe=6A7E7D1C&_nc_sid=a21977",
     titulo: "Divisórias Comerciais em Curitiba",
     texto: "Divisórias para lojas, consultórios, clínicas, faculdades e indústrias em Curitiba. Soluções robustas para divisão rápida de espaços comerciais.",
     descricaoDetalhada: "Projetadas para atender comércios, clínicas, escritórios e galpões industriais em Curitiba e RMC, nossas divisórias comerciais garantem alta resistência ao uso intenso, facilidade de higienização e adequação às normas sanitárias e de segurança. Ideais para quem precisa inaugurar ou reestruturar um ponto comercial sem perder dias de faturamento.",
@@ -43,7 +43,7 @@ export const SERVICES: Service[] = [
   {
     slug: "drywall-profissional",
     categoria: "drywall",
-    imagem: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/768592673_1276546311117667_6661732395481517499_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=107&_nc_ohc=aqARHDbivFMQ7kNvwEohJth&sdl=0&ccb=14-4&oh=00_AQGkgaa-MwJaiA_JSUEhVq_YVj0voaFttMSxfcN4WN-uXw&oe=6A7E70E3&_nc_sid=a21977",
     titulo: "Divisórias em Drywall e Gesso Acartonado",
     texto: "Paredes divisórias em Drywall para isolamento acústico e térmico superior. Acabamento liso pronto para pintura em residências e empresas.",
     descricaoDetalhada: "O sistema de paredes divisórias em Drywall (gesso acartonado) é a escolha perfeita para quem busca paredes com acabamento liso e idêntico à alvenaria, porém com instalação 3 vezes mais rápida. Utilizadas para separação de dormitórios, criação de closets, salas acústicas de reunião e divisões residenciais ou comerciais de alto padrão em Curitiba.",
@@ -52,7 +52,7 @@ export const SERVICES: Service[] = [
   {
     slug: "forro-modular-pvc",
     categoria: "walls",
-    imagem: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/772632591_1071910328521380_4863976614208023566_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=100&_nc_ohc=0ufGbWwGOwEQ7kNvwGR4RV3&sdl=0&ccb=14-4&oh=00_AQGZO9Q0g48FUnSokRz99JyabtXiPcTWXCnyn4fCqjoMYQ&oe=6A7E80FF&_nc_sid=a21977",
     titulo: "Forros Modulares em PVC e Mineral",
     texto: "Serviço complementar de instalação de forros em PVC e modulares, resistentes à umidade e de fácil manutenção para ambientes corporativos.",
     descricaoDetalhada: "Complementando nossas soluções de divisórias, oferecemos a instalação de forros modulares em PVC e fibra mineral para escritórios, comércios e depósitos em Curitiba. Proteção contra umidade, cupins e facilidade para passagem de fiações elétricas e dutos de ar-condicionado.",
@@ -61,7 +61,7 @@ export const SERVICES: Service[] = [
   {
     slug: "sanca-de-gesso",
     categoria: "gypsum",
-    imagem: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/770756442_1578290340600530_6185038236087888169_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=102&_nc_ohc=y7io7SILIc4Q7kNvwGW0W_s&sdl=0&ccb=14-4&oh=00_AQHaMBLxtbaZWKW3GwBQKssj4PAsrmgYhozt63s0SAXmmw&oe=6A7E8097&_nc_sid=a21977",
     titulo: "Sancas de Gesso e Iluminação",
     texto: "Acabamentos decorativos e sancas de gesso para composição arquitetônica em projetos com divisórias e drywall em Curitiba.",
     descricaoDetalhada: "Valorização estética para tetos e ambientes integrados. Desenvolvemos sancas abertas, fechadas e rasgos de luz em LED que harmonizam perfeitamente com projetos de divisórias e drywall corporativos e residenciais.",
@@ -77,7 +77,7 @@ export const ARTICLES: Article[] = [
     data: "05/02/2026",
     tempoLeitura: "5 min de leitura",
     categoria: "Divisórias Corporativas",
-    imagem: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/772656235_1361215096222657_3087452710502216900_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=101&_nc_ohc=J5iLS93ocrwQ7kNvwF0oj62&sdl=0&ccb=14-4&oh=00_AQGOo_YZeGegJZ_QlNBgAUuIoyc6G4f4klChZt6uSb7Hig&oe=6A7E877C&_nc_sid=a21977",
     conteudo: `Organizar um ambiente corporativo exige planejamento inteligente do espaço. Em Curitiba, onde o mercado empresarial exige agilidade e requinte, a escolha do tipo certo de divisória impacta diretamente a produtividade e a acústica das equipes.
 
 ### 1. Divisórias de Eucatex (Naval)
@@ -99,7 +99,7 @@ Considere o prazo disponível para a obra, a necessidade de isolamento acústico
     data: "28/01/2026",
     tempoLeitura: "4 min de leitura",
     categoria: "Guia Empresarial",
-    imagem: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=800&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/771677490_1048725951204222_7232037595499993818_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=5Rz4TTTHnTUQ7kNvwEinKJb&sdl=0&ccb=14-4&oh=00_AQFm-Og6cjxS89fvxeC1rEvsEHgJxH5WxklGn1u-YuFuqQ&oe=6A7E85AD&_nc_sid=a21977",
     conteudo: `Mudar o layout ou criar novos departamentos na sua empresa não precisa ser sinônimo de pesadelo com obras demoradas. As divisórias modulares transformam metros quadrados em espaços funcionais em questão de poucas horas.
 
 ### Fatores cruciais na escolha:
@@ -115,7 +115,7 @@ Considere o prazo disponível para a obra, a necessidade de isolamento acústico
     data: "15/01/2026",
     tempoLeitura: "6 min de leitura",
     categoria: "Comparativo Técnico",
-    imagem: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/768592673_1276546311117667_6661732395481517499_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=107&_nc_ohc=aqARHDbivFMQ7kNvwEohJth&sdl=0&ccb=14-4&oh=00_AQGkgaa-MwJaiA_JSUEhVq_YVj0voaFttMSxfcN4WN-uXw&oe=6A7E70E3&_nc_sid=a21977",
     conteudo: `Uma das dúvidas mais comuns de quem vai reformar um imóvel comercial ou residencial em Curitiba é: **devo instalar divisória de Eucatex ou parede de Drywall?**
 
 ### Divisória de Eucatex:
@@ -139,7 +139,7 @@ Na Decorart Divisórias, auxiliamos você a selecionar a melhor opção para o s
     data: "10/01/2026",
     tempoLeitura: "4 min de leitura",
     categoria: "Orçamento & Custo",
-    imagem: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=800&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/771589414_2087265455498189_8600494230422100395_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=105&_nc_ohc=-JkxH4EeOncQ7kNvwHe1zbS&sdl=0&ccb=14-4&oh=00_AQGHiEOYqVJs4kiJphlHQ7EC45Jps95QfuJg9Filswfy6w&oe=6A7E7D1C&_nc_sid=a21977",
     conteudo: `O custo para instalação de divisórias em Curitiba varia de acordo com o tipo de material escolhido, a metragem total do ambiente, os acessórios (portas, visores de vidro, fechaduras) e o local da instalação.
 
 ### O que influencia no valor do m²?
@@ -153,25 +153,25 @@ Solicite um orçamento rápido com a equipe da Decorart Divisórias via WhatsApp
 
 export const PROJECTS: Project[] = [
   {
-    imagem: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=800&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/771677490_1048725951204222_7232037595499993818_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=5Rz4TTTHnTUQ7kNvwEinKJb&sdl=0&ccb=14-4&oh=00_AQFm-Og6cjxS89fvxeC1rEvsEHgJxH5WxklGn1u-YuFuqQ&oe=6A7E85AD&_nc_sid=a21977",
     titulo: "Escritório Corporativo Batel",
     descricao: "Projeto com divisórias de Eucatex e módulos com visores de vidro temperado para salas executivas no Batel.",
     cta: "Solicitar Orçamento Similar"
   },
   {
-    imagem: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/772656235_1361215096222657_3087452710502216900_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=101&_nc_ohc=J5iLS93ocrwQ7kNvwF0oj62&sdl=0&ccb=14-4&oh=00_AQGOo_YZeGegJZ_QlNBgAUuIoyc6G4f4klChZt6uSb7Hig&oe=6A7E877C&_nc_sid=a21977",
     titulo: "Centro Empresarial Rebouças",
     descricao: "Instalação de 350m² de divisórias modulares para criação de estações de trabalho e salas de reunião no Rebouças.",
     cta: "Ver Solução em Divisórias"
   },
   {
-    imagem: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/768592673_1276546311117667_6661732395481517499_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=107&_nc_ohc=aqARHDbivFMQ7kNvwEohJth&sdl=0&ccb=14-4&oh=00_AQGkgaa-MwJaiA_JSUEhVq_YVj0voaFttMSxfcN4WN-uXw&oe=6A7E70E3&_nc_sid=a21977",
     titulo: "Clínica Médica Ecoville",
     descricao: "Divisórias em Drywall acústico com isolamento em lã de rocha para consultórios no Ecoville / Campo Comprido.",
     cta: "Solicitar Igual"
   },
   {
-    imagem: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop",
+    imagem: "https://scontent.xx.fbcdn.net/v/t39.105495-1/771589414_2087265455498189_8600494230422100395_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=105&_nc_ohc=-JkxH4EeOncQ7kNvwHe1zbS&sdl=0&ccb=14-4&oh=00_AQGHiEOYqVJs4kiJphlHQ7EC45Jps95QfuJg9Filswfy6w&oe=6A7E7D1C&_nc_sid=a21977",
     titulo: "Pavilhão Industrial CIC",
     descricao: "Montagem de divisórias comerciais e forro modular para área administrativa de grande indústria na CIC.",
     cta: "Orçamento para Indústria"

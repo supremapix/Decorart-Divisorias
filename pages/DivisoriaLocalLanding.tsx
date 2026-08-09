@@ -22,7 +22,7 @@ export const DivisoriaLocalLanding: React.FC<LandingProps> = ({ slugKey }) => {
       description: "Empresa especializada em divisórias Eucatex, divisórias para escritórios, clínicas e empresas em Curitiba. Garantia de 5 anos e orçamento rápido.",
       canonical: "/divisorias-curitiba",
       subtitle: "Referência absoluta no fornecimento e montagem de divisórias de alta performance para ambientes corporativos e comerciais em Curitiba.",
-      heroImg: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+      heroImg: "https://scontent.xx.fbcdn.net/v/t39.105495-1/769412979_1400738358608292_6483490568402387167_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=100&_nc_ohc=m66DrTSIZK8Q7kNvwFnrqfe&sdl=0&ccb=14-4&oh=00_AQGgjWK5rVsVlL9ayKuzguZQCfXBK8lMlFtp7-ht7mdWyA&oe=6A7E741F&_nc_sid=a21977",
       badge: "LÍDER EM DIVISÓRIAS EM CURITIBA"
     },
     'eucatex-curitiba': {
@@ -31,7 +31,7 @@ export const DivisoriaLocalLanding: React.FC<LandingProps> = ({ slugKey }) => {
       description: "Instalação de divisórias Eucatex modulares para escritórios e empresas em Curitiba. Preço direto de fábrica e montagem imediata.",
       canonical: "/divisorias-eucatex-curitiba",
       subtitle: "Painéis Eucatex de 35mm com perfis de aço galvanizado. A melhor solução modular em custo-benefício para divisão de salas comerciais.",
-      heroImg: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1200&auto=format&fit=crop",
+      heroImg: "https://scontent.xx.fbcdn.net/v/t39.105495-1/769412979_1400738358608292_6483490568402387167_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=100&_nc_ohc=m66DrTSIZK8Q7kNvwFnrqfe&sdl=0&ccb=14-4&oh=00_AQGgjWK5rVsVlL9ayKuzguZQCfXBK8lMlFtp7-ht7mdWyA&oe=6A7E741F&_nc_sid=a21977",
       badge: "DIVISÓRIAS EUCATEX MODULARES"
     },
     'escritorio-curitiba': {
@@ -40,7 +40,7 @@ export const DivisoriaLocalLanding: React.FC<LandingProps> = ({ slugKey }) => {
       description: "Projetos de divisórias corporativas para escritórios no Batel, Centro, Rebouças e toda Curitiba. Privacidade acústica e elegância visual.",
       canonical: "/divisorias-escritorio-curitiba",
       subtitle: "Crie salas de reunião, gerências, recepções e estantes de trabalho com rapidez e acabamento de padrão executivo.",
-      heroImg: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200&auto=format&fit=crop",
+      heroImg: "https://scontent.xx.fbcdn.net/v/t39.105495-1/768310450_1629409275567951_4688024770134287593_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=103&_nc_ohc=K-dU_LXwGUkQ7kNvwG3YlwZ&sdl=0&ccb=14-4&oh=00_AQG7d3sbpTlSvCLS_gsj56wc-Mvmrsloo5rSg3gLf3aaVg&oe=6A7E63B8&_nc_sid=a21977",
       badge: "DIVISÓRIAS CORPORATIVAS"
     },
     'comerciais-curitiba': {
@@ -49,7 +49,7 @@ export const DivisoriaLocalLanding: React.FC<LandingProps> = ({ slugKey }) => {
       description: "Divisórias robustas para lojas, galpões, clínicas e consultórios em Curitiba. Agilidade na entrega sem interromper seus negócios.",
       canonical: "/divisorias-comerciais-curitiba",
       subtitle: "Soluções de separação espacial para comércios que precisam inaugurar ou reformar com urgência e conformidade sanitária.",
-      heroImg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+      heroImg: "https://scontent.xx.fbcdn.net/v/t39.105495-1/767560602_1031414302832652_6825547820352328130_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=100&_nc_ohc=n3deeDxDq6kQ7kNvwE2GFv6&sdl=0&ccb=14-4&oh=00_AQFEMiWsg3HRKA_vrgldUkBCdwV4RhgC7b-isUJRlTQYLQ&oe=6A7E794F&_nc_sid=a21977",
       badge: "DIVISÓRIAS COMERCIAIS & INDUSTRIAIS"
     },
     'sao-jose-dos-pinhais': {

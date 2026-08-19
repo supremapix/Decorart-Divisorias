@@ -6,7 +6,7 @@ interface LogoProps {
   variant?: 'light' | 'dark';
 }
 
-export const OFFICIAL_LOGO_URL = "https://cdn.fbsbx.com/v/t65.102178-21/771997381_1356068486114833_3628982940767296904_n.jpg/decorart_branca_transparente.webp?_nc_ht=cdn.fbsbx.com&_nc_ohc=icw6HMp8djgQ7kNvwGy994t&sdl=0&ccb=14-4&oh=00_AQGF29NFli7wMmGrY7xdyZoAWJtNsSalRlZNu3RPaxTz2w&oe=6A7A8F9A&_nc_sid=4ee932";
+export const OFFICIAL_LOGO_URL = "https://img.supremasite.com.br/decorart.png";
 
 export const Logo: React.FC<LogoProps> = ({ className = "h-12", variant = 'dark' }) => {
   return (

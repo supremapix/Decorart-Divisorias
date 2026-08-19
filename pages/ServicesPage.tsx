@@ -6,7 +6,7 @@ import { SafeImage } from '../components/SafeImage';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react';
 
-const HERO_BG = "https://scontent.xx.fbcdn.net/v/t39.105495-1/771677490_1048725951204222_7232037595499993818_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=5Rz4TTTHnTUQ7kNvwEinKJb&sdl=0&ccb=14-4&oh=00_AQFm-Og6cjxS89fvxeC1rEvsEHgJxH5WxklGn1u-YuFuqQ&oe=6A7E85AD&_nc_sid=a21977";
+const HERO_BG = "https://img.supremasite.com.br/modern_office_curitiba.webp";
 
 export const ServicesPage: React.FC = () => {
   return (

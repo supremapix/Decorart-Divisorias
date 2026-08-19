@@ -32,7 +32,7 @@ export const ServiceDetail: React.FC = () => {
     { url: PROJECTS[1].imagem, title: 'Divisórias Modulares para Salas de Reunião', tag: 'Eucatex' },
     { url: PROJECTS[2].imagem, title: 'Isolamento Acústico para Consultórios', tag: 'Drywall' },
     { url: PROJECTS[3].imagem, title: 'Divisórias Comerciais de Alta Resistência', tag: 'Comercial' },
-    { url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&q=80&w=1200', title: 'Acabamento Executivo em Alumínio e Madeira', tag: 'Acabamento' }
+    { url: 'https://img.supremasite.com.br/office_dividers_showroom.webp', title: 'Acabamento Executivo em Alumínio e Madeira', tag: 'Acabamento' }
   ];
 
   const [activeMainImage, setActiveMainImage] = useState(galleryImages[0].url);

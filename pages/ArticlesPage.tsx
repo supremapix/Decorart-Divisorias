@@ -6,7 +6,7 @@ import { SafeImage } from '../components/SafeImage';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock, Calendar, BookOpen } from 'lucide-react';
 
-const HERO_BG = "https://scontent.xx.fbcdn.net/v/t39.105495-1/772632591_1071910328521380_4863976614208023566_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=100&_nc_ohc=0ufGbWwGOwEQ7kNvwGR4RV3&sdl=0&ccb=14-4&oh=00_AQGZO9Q0g48FUnSokRz99JyabtXiPcTWXCnyn4fCqjoMYQ&oe=6A7E80FF&_nc_sid=a21977";
+const HERO_BG = "https://img.supremasite.com.br/office_dividers_showroom.webp";
 
 export const ArticlesPage: React.FC = () => {
   return (

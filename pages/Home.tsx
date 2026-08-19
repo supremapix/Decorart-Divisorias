@@ -8,13 +8,13 @@ import { ChevronDown, MessageCircle, Phone, ArrowRight, ShieldCheck, Building2, 
 import { Link } from 'react-router-dom';
 
 const HERO_SLIDER_IMAGES = [
-  "https://scontent.xx.fbcdn.net/v/t39.105495-1/772656235_1361215096222657_3087452710502216900_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=101&_nc_ohc=J5iLS93ocrwQ7kNvwF0oj62&sdl=0&ccb=14-4&oh=00_AQGOo_YZeGegJZ_QlNBgAUuIoyc6G4f4klChZt6uSb7Hig&oe=6A7E877C&_nc_sid=a21977",
-  "https://scontent.xx.fbcdn.net/v/t39.105495-1/771677490_1048725951204222_7232037595499993818_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=5Rz4TTTHnTUQ7kNvwEinKJb&sdl=0&ccb=14-4&oh=00_AQFm-Og6cjxS89fvxeC1rEvsEHgJxH5WxklGn1u-YuFuqQ&oe=6A7E85AD&_nc_sid=a21977",
-  "https://scontent.xx.fbcdn.net/v/t39.105495-1/771589414_2087265455498189_8600494230422100395_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=105&_nc_ohc=-JkxH4EeOncQ7kNvwHe1zbS&sdl=0&ccb=14-4&oh=00_AQGHiEOYqVJs4kiJphlHQ7EC45Jps95QfuJg9Filswfy6w&oe=6A7E7D1C&_nc_sid=a21977",
-  "https://scontent.xx.fbcdn.net/v/t39.105495-1/768592673_1276546311117667_6661732395481517499_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=107&_nc_ohc=aqARHDbivFMQ7kNvwEohJth&sdl=0&ccb=14-4&oh=00_AQGkgaa-MwJaiA_JSUEhVq_YVj0voaFttMSxfcN4WN-uXw&oe=6A7E70E3&_nc_sid=a21977",
-  "https://scontent.xx.fbcdn.net/v/t39.105495-1/772632591_1071910328521380_4863976614208023566_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=100&_nc_ohc=0ufGbWwGOwEQ7kNvwGR4RV3&sdl=0&ccb=14-4&oh=00_AQGZO9Q0g48FUnSokRz99JyabtXiPcTWXCnyn4fCqjoMYQ&oe=6A7E80FF&_nc_sid=a21977",
-  "https://scontent.xx.fbcdn.net/v/t39.105495-1/770756442_1578290340600530_6185038236087888169_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=102&_nc_ohc=y7io7SILIc4Q7kNvwGW0W_s&sdl=0&ccb=14-4&oh=00_AQHaMBLxtbaZWKW3GwBQKssj4PAsrmgYhozt63s0SAXmmw&oe=6A7E8097&_nc_sid=a21977",
-  "https://scontent.xx.fbcdn.net/v/t39.105495-1/767560602_1031414302832652_6825547820352328130_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=100&_nc_ohc=n3deeDxDq6kQ7kNvwE2GFv6&sdl=0&ccb=14-4&oh=00_AQFEMiWsg3HRKA_vrgldUkBCdwV4RhgC7b-isUJRlTQYLQ&oe=6A7E794F&_nc_sid=a21977"
+  "https://img.supremasite.com.br/modern_office_curitiba.webp",
+  "https://img.supremasite.com.br/batel_office_interior.webp",
+  "https://img.supremasite.com.br/eucatex_office_curitiba.webp",
+  "https://img.supremasite.com.br/showroom_modular_partitions.webp",
+  "https://img.supremasite.com.br/corporate_hallway_curitiba.webp",
+  "https://img.supremasite.com.br/drywall_office_installation.webp",
+  "https://img.supremasite.com.br/luxury_office_cove_lighting.webp"
 ];
 
 export const Home: React.FC = () => {

@@ -106,11 +106,21 @@ export const ArticleDetail: React.FC = () => {
               </div>
 
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
-                {article.conteudo.split('\n\n').map((paragraph, idx) => {
-                  if (paragraph.startsWith('### ')) {
-                    return <h3 key={idx} className="text-2xl font-black text-blue-950 mt-8 mb-4">{paragraph.replace('### ', '')}</h3>;
-                  }
-                  return <p key={idx} className="text-gray-700 leading-relaxed font-normal">{paragraph}</p>;
+                {article.conteudo.split('\n\n').map((block, idx) => {
+                  const lines = block.split('\n');
+                  const heading = lines[0].startsWith('### ') ? lines.shift()!.slice(4) : null;
+                  const inline = (text: string) => text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+                    part.startsWith('**') && part.endsWith('**') ? <strong key={i}>{part.slice(2, -2)}</strong> : part
+                  );
+                  const content = lines.filter(line => line.trim());
+                  const ordered = content.length > 0 && content.every(line => /^\d+\.\s/.test(line));
+                  const unordered = content.length > 0 && content.every(line => /^-\s/.test(line));
+                  return <React.Fragment key={idx}>
+                    {heading && <h2 className="text-2xl font-black text-blue-950 mt-8 mb-4">{heading}</h2>}
+                    {ordered ? <ol className="list-decimal pl-6 space-y-3">{content.map((line, i) => <li key={i}>{inline(line.replace(/^\d+\.\s/, ''))}</li>)}</ol>
+                      : unordered ? <ul className="list-disc pl-6 space-y-3">{content.map((line, i) => <li key={i}>{inline(line.replace(/^-\s/, ''))}</li>)}</ul>
+                      : content.map((line, i) => <p key={i} className="text-gray-700 leading-relaxed font-normal">{inline(line)}</p>)}
+                  </React.Fragment>;
                 })}
               </div>
 

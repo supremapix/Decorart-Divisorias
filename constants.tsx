@@ -135,19 +135,46 @@ Na Decorart Divisórias, auxiliamos você a selecionar a melhor opção para o s
   {
     slug: "quanto-custa-instalar-divisorias-curitiba",
     titulo: "Quanto Custa Instalar Divisórias em Curitiba em 2026?",
-    resumo: "Entenda como é calculado o preço por metro quadrado de divisórias em Curitiba e como economizar sem perder qualidade.",
+    resumo: "Veja o que incluir no orçamento de divisórias em Curitiba: medidas, portas, materiais, instalação, logística e comparação do valor total.",
     data: "10/01/2026",
     tempoLeitura: "4 min de leitura",
     categoria: "Orçamento & Custo",
     imagem: "https://img.supremasite.com.br/showroom_modular_partitions.webp",
-    conteudo: `O custo para instalação de divisórias em Curitiba varia de acordo com o tipo de material escolhido, a metragem total do ambiente, os acessórios (portas, visores de vidro, fechaduras) e o local da instalação.
+    conteudo: `O preço de uma divisória em Curitiba depende do sistema, das medidas, dos acessórios e do trabalho necessário no imóvel. Para comparar propostas, peça o valor total do mesmo escopo: um preço por metro quadrado isolado pode não incluir portas, visores, acabamento, transporte ou instalação.
 
-### O que influencia no valor do m²?
-1. **Tipo de Painel**: Painéis de Eucatex possuem custo por m² muito competitivo por virem pré-acabados. O Drywall exige etapas adicionais de tratamento de junta e pintura.
-2. **Inclusão de Portas e Visores**: Cada porta completa com aduela e fechadura, ou módulo de vidro embutido, ajusta o valor total do orçamento.
-3. **Acessibilidade e Horário da Obra**: Obras noturnas em shopping centers ou prédios com horários restritos exigem logística diferenciada.
+### Quais medidas ajudam no primeiro orçamento?
 
-Solicite um orçamento rápido com a equipe da Decorart Divisórias via WhatsApp para receber a cotação exata do seu projeto em poucas horas.`
+Informe o comprimento e a altura de cada trecho que pretende fechar. Acrescente a quantidade e as dimensões aproximadas de portas e visores. A área do piso da sala não é a mesma coisa que a área das divisórias. Fotos e um croqui ajudam na conversa inicial, mas não substituem a medição e a avaliação antes da execução.
+
+### O que deve estar discriminado na proposta?
+
+1. Sistema e materiais: tipo de painel ou chapa, estrutura, espessura, acabamento e componentes previstos.
+2. Aberturas: quantidade de portas, ferragens, fechaduras e visores, com as respectivas medidas.
+3. Montagem e acabamento: mão de obra, tratamento de juntas quando necessário, pintura e proteção do ambiente.
+4. Logística: frete, descarga, acesso ao andar, estacionamento e retirada dos resíduos.
+5. Condições: valor total, forma de pagamento, validade da proposta, prazo combinado e garantia por escrito.
+
+Confirme quais itens estão incluídos, quais serão contratados à parte e quem fornecerá cada material. Não assuma que pintura, elétrica, desmontagem de uma divisória antiga ou reparos no piso fazem parte do preço.
+
+### Eucatex ou drywall: compare o projeto, não apenas o metro quadrado
+
+Descreva como o espaço será usado: recepção, sala de reunião, posto de trabalho ou depósito. Informe se precisa de passagem de luz, privacidade, instalação de equipamentos ou futura mudança do layout. Peça uma solução especificada para essas necessidades. Desempenho acústico e resistência dependem do conjunto projetado e instalado, não apenas do nome do material.
+
+### O que muda a logística em Curitiba e região?
+
+Em salas comerciais e condomínios, confirme com a administração os horários de obra, regras para elevador, proteção das áreas comuns e entrada de materiais. Informe o bairro ou a cidade, o andar e as condições de descarga. A equipe poderá avaliar a disponibilidade de atendimento e combinar as condições para o endereço, sem tratar uma estimativa inicial como agendamento confirmado.
+
+### Como comparar duas propostas sem cair em um preço incompleto?
+
+Coloque lado a lado as mesmas medidas, materiais, quantidades de portas e serviços. Se uma proposta não detalha algum item, pergunte antes de decidir. Uma opção aparentemente menor pode deixar etapas para outro fornecedor. Registre também como serão aprovadas mudanças de medidas ou de acabamento após a contratação.
+
+### Preciso esvaziar o ambiente antes da instalação?
+
+Informe se a empresa continuará funcionando durante o serviço e quais móveis ou equipamentos ocupam a área. Combine proteção, remanejamento, circulação e limpeza com os responsáveis. Não presuma montagem sem poeira, sem ruído ou sem interrupção: isso depende do trabalho e das condições do local.
+
+### O que enviar para a Decorart?
+
+Prepare fotos do ambiente, medidas preliminares, bairro ou cidade, tipo de uso e quantidade de portas. Acrescente suas dúvidas sobre acabamento e prazo desejado. Use o formulário ao lado para preparar a mensagem e revise o pedido no WhatsApp. A cotação e a disponibilidade são confirmadas pela equipe após avaliar as informações; não há preço ou prazo universal para todos os projetos.`
   }
 ];
 

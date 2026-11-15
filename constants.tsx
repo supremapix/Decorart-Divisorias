@@ -174,7 +174,7 @@ Informe se a empresa continuará funcionando durante o serviço e quais móveis 
 
 ### O que enviar para a Decorart?
 
-Prepare fotos do ambiente, medidas preliminares, bairro ou cidade, tipo de uso e quantidade de portas. Acrescente suas dúvidas sobre acabamento e prazo desejado. Use o formulário ao lado para preparar a mensagem e revise o pedido no WhatsApp. A cotação e a disponibilidade são confirmadas pela equipe após avaliar as informações; não há preço ou prazo universal para todos os projetos.`
+Prepare fotos do ambiente, medidas preliminares, bairro ou cidade, tipo de uso e quantidade de portas. Acrescente suas dúvidas sobre acabamento e prazo desejado. Use o formulário abaixo para preparar a mensagem e revise o pedido no WhatsApp. A cotação e a disponibilidade são confirmadas pela equipe após avaliar as informações; não há preço ou prazo universal para todos os projetos.`
   }
 ];
 

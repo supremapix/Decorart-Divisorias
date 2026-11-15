@@ -94,9 +94,9 @@ export const ArticleDetail: React.FC = () => {
       {/* Conteúdo Principal */}
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 gap-12">
             
-            <div className="lg:col-span-2 space-y-8">
+            <div className="space-y-8">
               <div className="rounded-3xl overflow-hidden shadow-2xl h-80 bg-gray-100">
                 <SafeImage 
                   src={article.imagem} 
@@ -142,8 +142,8 @@ export const ArticleDetail: React.FC = () => {
             </div>
 
             {/* Sidebar */}
-            <aside className="space-y-8">
-              <div className="sticky top-28 bg-white p-8 rounded-3xl border border-gray-100 shadow-xl">
+            <aside className="space-y-8 w-full max-w-2xl mx-auto">
+              <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl">
                 <h3 className="text-xl font-black text-blue-950 mb-4 uppercase">Solicite uma Cotação</h3>
                 <p className="text-gray-500 text-sm mb-6">
                   Fale com nossos especialistas em divisórias para Curitiba e Região Metropolitana.

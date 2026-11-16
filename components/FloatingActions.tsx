@@ -290,6 +290,19 @@ export const FloatingActions: React.FC = () => {
           <Phone size={16} />
         </a>
 
+        {/* Segundo contato solicitado: mantém o WhatsApp original da Decorart. */}
+        <a
+          href="https://wa.me/5541996646761?text=Ol%C3%A1!%20Conheci%20a%20ENGEUM%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative w-11 h-11 sm:w-12 sm:h-12 bg-emerald-800 hover:bg-emerald-700 text-white rounded-full shadow-xl border-2 border-emerald-300/60 transition-colors flex items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"
+          aria-label="Segundo WhatsApp: ENGEUM, (41) 99664-6761"
+          title="WhatsApp ENGEUM: (41) 99664-6761"
+        >
+          <MessageCircle size={22} aria-hidden="true" />
+          <span className="absolute -top-1 -right-1 rounded-full bg-white text-emerald-900 w-5 h-5 text-xs font-bold flex items-center justify-center" aria-hidden="true">2</span>
+        </a>
+
         {/* Botão WhatsApp Compacto com Ponto Verde Online */}
         <a
           href={BUSINESS_INFO.whatsapp}

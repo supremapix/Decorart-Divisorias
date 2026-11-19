@@ -1,6 +1,76 @@
-
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/servicos/drywall-gesso-fechamentos",
+      "destination": "/_drywall/central.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/instalacao-de-drywall",
+      "destination": "/_drywall/instalacao-de-drywall.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/paredes-em-drywall",
+      "destination": "/_drywall/paredes-em-drywall.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/divisorias-em-drywall",
+      "destination": "/_drywall/divisorias-em-drywall.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/forro-de-drywall",
+      "destination": "/_drywall/forro-de-drywall.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/forro-de-gesso",
+      "destination": "/_drywall/forro-de-gesso.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/gesso-rebaixado",
+      "destination": "/_drywall/gesso-rebaixado.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/sancas-de-gesso",
+      "destination": "/_drywall/sancas-de-gesso.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/sancas-com-iluminacao-led",
+      "destination": "/_drywall/sancas-com-iluminacao-led.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/rebaixamento-de-teto",
+      "destination": "/_drywall/rebaixamento-de-teto.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/paredes-com-isolamento-acustico",
+      "destination": "/_drywall/paredes-com-isolamento-acustico.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/isolamento-termico",
+      "destination": "/_drywall/isolamento-termico.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/isolamento-termoacustico",
+      "destination": "/_drywall/isolamento-termoacustico.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/fechamento-externo-em-glasroc",
+      "destination": "/_drywall/fechamento-externo-em-glasroc.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/fechamento-com-placas-cimenticias",
+      "destination": "/_drywall/fechamento-com-placas-cimenticias.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/tratamento-de-juntas",
+      "destination": "/_drywall/tratamento-de-juntas.html"
+    },
+    {
+      "source": "/servicos/drywall-gesso-fechamentos/revestimentos-para-construcao-a-seco",
+      "destination": "/_drywall/revestimentos-para-construcao-a-seco.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }

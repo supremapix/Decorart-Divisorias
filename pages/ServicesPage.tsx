@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SERVICES, BUSINESS_INFO } from '../constants';
+import { DrywallLandingTeaser } from './DrywallServices';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import { SafeImage } from '../components/SafeImage';
 import { Link } from 'react-router-dom';
@@ -53,6 +54,8 @@ export const ServicesPage: React.FC = () => {
           </motion.p>
         </div>
       </section>
+
+      <DrywallLandingTeaser />
 
       {/* Grid de Serviços */}
       <section className="py-20 md:py-28 bg-slate-50">

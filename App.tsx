@@ -14,6 +14,9 @@ import { ArticleDetail } from './pages/ArticleDetail';
 import { DivisoriaLocalLanding } from './pages/DivisoriaLocalLanding';
 import { BAIRROS, CIDADES } from './constants';
 
+import { DrywallSection } from './pages/DrywallServices';
+import { DRYWALL_BASE, drywallServiceFor } from './drywall-services';
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -22,9 +25,12 @@ const ScrollToTop = () => {
   return null;
 };
 
-const App: React.FC = () => {
+const SiteLayout: React.FC = () => {
+  const { pathname } = useLocation();
+  const normalized = pathname.replace(/\/$/, '');
+  const drywallService = drywallServiceFor(normalized);
+  if (normalized === DRYWALL_BASE || drywallService) return <><ScrollToTop /><DrywallSection key={normalized} service={drywallService} /></>;
   return (
-    <Router>
       <div className="flex flex-col min-h-screen">
         <ScrollToTop />
         <Header />
@@ -68,8 +74,8 @@ const App: React.FC = () => {
         <Footer />
         <FloatingActions />
       </div>
-    </Router>
   );
 };
 
+const App: React.FC = () => <Router><SiteLayout /></Router>;
 export default App;

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/images-drywall.mjs && vite build --ssr scripts/render-drywall.tsx --outDir .drywall-ssr && node .drywall-ssr/render-drywall.js",
     "preview": "vite preview"
   },
   "dependencies": {

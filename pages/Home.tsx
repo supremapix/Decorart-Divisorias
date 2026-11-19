@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Typewriter } from '../components/Typewriter';
 import { SERVICES, PROJECTS, BENEFITS, FAQ_ITEMS, BUSINESS_INFO, ARTICLES } from '../constants';
 import { SafeImage } from '../components/SafeImage';
+import { DrywallLandingTeaser } from './DrywallServices';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import { ChevronDown, MessageCircle, Phone, ArrowRight, ShieldCheck, Building2, MapPin, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -151,6 +152,8 @@ export const Home: React.FC = () => {
           </motion.div>
         </div>
       </section>
+
+      <DrywallLandingTeaser />
 
       {/* Seção Principal de Soluções em Divisórias */}
       <section className="py-20 md:py-28 bg-slate-50 relative">

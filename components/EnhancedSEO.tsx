@@ -19,6 +19,7 @@ export const EnhancedSEO: React.FC<SEOProps> = ({
   canonical, 
   type = 'website', 
   image, 
+  imageDimensions,
   jsonLd 
 }) => {
   const baseUrl = BUSINESS_INFO.domain.endsWith('/') ? BUSINESS_INFO.domain.slice(0, -1) : BUSINESS_INFO.domain;

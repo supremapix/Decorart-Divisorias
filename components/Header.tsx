@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
     { path: '/', label: 'Home' },
     { path: '/divisorias-curitiba', label: 'Divisórias Curitiba' },
     { path: '/servicos', label: 'Serviços' },
-    { path: '/artigos', label: 'Artigos' },
+    { path: '/artigos', label: 'Blog' },
     { path: '/bairros', label: 'Bairros' },
     { path: '/cidades', label: 'Cidades' },
   ];

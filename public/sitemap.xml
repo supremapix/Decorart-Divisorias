@@ -17,11 +17,6 @@
 
   <!-- Artigos e Guias -->
   <url><loc>https://www.decorartdivisorias.com.br/artigos</loc><priority>0.85</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.decorartdivisorias.com.br/artigos/quanto-custa-divisoria-eucatex-curitiba</loc><priority>0.80</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://www.decorartdivisorias.com.br/artigos/divisoria-eucatex-vs-drywall-qual-escolher</loc><priority>0.80</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://www.decorartdivisorias.com.br/artigos/como-planejar-divisoria-para-escritorio-pequeno</loc><priority>0.80</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://www.decorartdivisorias.com.br/artigos/divisoria-comercial-com-visor-de-vidro-vantagens</loc><priority>0.80</priority><changefreq>monthly</changefreq></url>
-
   <!-- Bairros Curitiba -->
   <url><loc>https://www.decorartdivisorias.com.br/bairros</loc><priority>0.80</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.decorartdivisorias.com.br/local/batel</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
@@ -53,4 +48,10 @@
   <url><loc>https://www.decorartdivisorias.com.br/servicos/drywall-gesso-fechamentos/fechamento-com-placas-cimenticias</loc></url>
   <url><loc>https://www.decorartdivisorias.com.br/servicos/drywall-gesso-fechamentos/tratamento-de-juntas</loc></url>
   <url><loc>https://www.decorartdivisorias.com.br/servicos/drywall-gesso-fechamentos/revestimentos-para-construcao-a-seco</loc></url>
+  <url><loc>https://www.decorartdivisorias.com.br/artigos/forro-modular-ou-drywall</loc></url>
+  <url><loc>https://www.decorartdivisorias.com.br/artigos/planejar-divisorias-para-loja-em-funcionamento</loc></url>
+  <url><loc>https://www.decorartdivisorias.com.br/artigos/tipos-de-divisorias-para-escritorios</loc></url>
+  <url><loc>https://www.decorartdivisorias.com.br/artigos/como-escolher-divisorias-para-empresas</loc></url>
+  <url><loc>https://www.decorartdivisorias.com.br/artigos/divisoria-eucatex-ou-drywall</loc></url>
+  <url><loc>https://www.decorartdivisorias.com.br/artigos/quanto-custa-instalar-divisorias-curitiba</loc></url>
 </urlset>

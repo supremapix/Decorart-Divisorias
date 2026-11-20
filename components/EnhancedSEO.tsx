@@ -9,6 +9,7 @@ interface SEOProps {
   canonical: string;
   type?: 'website' | 'article';
   image?: string;
+  imageDimensions?: {width: number; height: number; mimeType: string};
   jsonLd?: object;
 }
 
@@ -22,7 +23,7 @@ export const EnhancedSEO: React.FC<SEOProps> = ({
 }) => {
   const baseUrl = BUSINESS_INFO.domain.endsWith('/') ? BUSINESS_INFO.domain.slice(0, -1) : BUSINESS_INFO.domain;
   const path = canonical.startsWith('/') ? canonical : `/${canonical}`;
-  const fullCanonical = `${baseUrl}${path}`;
+  const fullCanonical = canonical.startsWith('https://') ? canonical : `${baseUrl}${path}`;
   
   // Imagem de preview social (OG Image) - Força absoluto para compatibilidade total
   const socialImage = image?.startsWith('http') ? image : `${baseUrl}/logo192.png`;
@@ -43,9 +44,9 @@ export const EnhancedSEO: React.FC<SEOProps> = ({
       <meta property="og:url" content={fullCanonical} />
       <meta property="og:image" content={socialImage} />
       <meta property="og:image:secure_url" content={socialImage} />
-      <meta property="og:image:type" content="image/jpeg" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image:type" content={imageDimensions?.mimeType || "image/jpeg"} />
+      <meta property="og:image:width" content={String(imageDimensions?.width || 1200)} />
+      <meta property="og:image:height" content={String(imageDimensions?.height || 630)} />
       <meta property="og:image:alt" content={title} />
       <meta property="og:locale" content="pt_BR" />
       <meta property="og:site_name" content={BUSINESS_INFO.name} />

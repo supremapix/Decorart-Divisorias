@@ -14,7 +14,9 @@ export const ArticleDetail: React.FC = () => {
     return <Navigate to="/artigos" replace />;
   }
 
-  const currentCanonical = `/artigos/${article.slug}`;
+  const canonicalOrigin = 'https://www.decorartdivisorias.com.br';
+  const currentCanonical = `${canonicalOrigin}/artigos/${article.slug}`;
+  const imageUrl = new URL(article.imagem, canonicalOrigin).href;
 
   return (
     <div className="bg-white min-h-screen">
@@ -22,7 +24,8 @@ export const ArticleDetail: React.FC = () => {
         title={`${article.titulo} | Decorart Divisórias Curitiba`}
         description={article.resumo}
         canonical={currentCanonical}
-        image={article.imagem}
+        image={imageUrl}
+        imageDimensions={article.imagemAlt ? {width: 1200, height: 800, mimeType: 'image/png'} : undefined}
         type="article"
         jsonLd={{
           "@context": "https://schema.org",
@@ -31,19 +34,20 @@ export const ArticleDetail: React.FC = () => {
               "@type": "Article",
               "headline": article.titulo,
               "description": article.resumo,
-              "image": article.imagem,
-              "datePublished": "2026-01-10",
+              "image": imageUrl,
+              ...(article.dataISO ? {"datePublished": article.dataISO} : {}),
+              "mainEntityOfPage": currentCanonical,
               "author": {
                 "@type": "Organization",
                 "name": BUSINESS_INFO.name,
-                "url": BUSINESS_INFO.domain
+                "url": canonicalOrigin
               },
               "publisher": {
                 "@type": "Organization",
                 "name": BUSINESS_INFO.name,
                 "logo": {
                   "@type": "ImageObject",
-                  "url": `${BUSINESS_INFO.domain}/logo.png`
+                  "url": `${canonicalOrigin}/logo192.png`
                 }
               }
             },
@@ -54,19 +58,19 @@ export const ArticleDetail: React.FC = () => {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": BUSINESS_INFO.domain
+                  "item": canonicalOrigin
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "Artigos",
-                  "item": `${BUSINESS_INFO.domain}/artigos`
+                  "name": "Blog",
+                  "item": `${canonicalOrigin}/artigos`
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": article.titulo,
-                  "item": `${BUSINESS_INFO.domain}${currentCanonical}`
+                  "item": currentCanonical
                 }
               ]
             }
@@ -78,7 +82,7 @@ export const ArticleDetail: React.FC = () => {
       <section className="bg-blue-950 py-16 text-white relative">
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <Link to="/artigos" className="inline-flex items-center text-gold mb-6 hover:underline font-bold transition-all">
-            <ArrowLeft size={18} className="mr-2" /> Voltar para Artigos
+            <ArrowLeft size={18} className="mr-2" /> Voltar ao blog
           </Link>
           <div className="flex items-center text-xs text-blue-200 font-bold mb-4 space-x-4">
             <span className="bg-gold/20 text-gold px-3 py-1 rounded-full border border-gold/30">{article.categoria}</span>
@@ -100,11 +104,12 @@ export const ArticleDetail: React.FC = () => {
               <div className="rounded-3xl overflow-hidden shadow-2xl h-80 bg-gray-100">
                 <SafeImage 
                   src={article.imagem} 
-                  alt={article.titulo} 
+                  alt={article.imagemAlt ?? article.titulo} 
                   className="w-full h-full object-cover"
                 />
               </div>
 
+              {article.imagemAlt && <p className="text-sm text-slate-600">Imagem ilustrativa gerada por IA.</p>}
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
                 {article.conteudo.split('\n\n').map((block, idx) => {
                   const lines = block.split('\n');
@@ -141,6 +146,10 @@ export const ArticleDetail: React.FC = () => {
               </div>
             </div>
 
+            {(article.servicos || article.fontes) && <section className="space-y-6">
+              {article.servicos && <div><h2 className="text-xl font-bold text-blue-950">Serviços relacionados</h2><ul className="mt-3 list-disc space-y-2 pl-6">{article.servicos.map(link => <li key={link.path}><Link className="underline text-blue-900" to={link.path}>{link.label}</Link></li>)}</ul></div>}
+              {article.fontes && <div><h2 className="text-xl font-bold text-blue-950">Para consultar</h2><ul className="mt-3 list-disc space-y-2 pl-6">{article.fontes.map(link => <li key={link.url}><a className="underline text-blue-900" href={link.url}>{link.label}</a></li>)}</ul></div>}
+            </section>}
             {/* Sidebar */}
             <aside className="space-y-8 w-full max-w-2xl mx-auto">
               <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl">

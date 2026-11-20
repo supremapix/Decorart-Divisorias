@@ -70,6 +70,62 @@ export const SERVICES: Service[] = [
 ];
 
 export const ARTICLES: Article[] = [
+{
+  "slug": "forro-modular-ou-drywall",
+  "titulo": "Forro modular ou drywall? Compare acesso e acabamento",
+  "resumo": "Saiba quando priorizar acesso ao entreforro ou acabamento contínuo e o que informar no orçamento para sua loja, clínica ou escritório.",
+  "data": "20/11/2026",
+  "dataISO": "2026-11-20",
+  "tempoLeitura": "3 min de leitura",
+  "categoria": "Forros e manutenção",
+  "imagem": "/imagens/drywall/forros-1200.png",
+  "imagemAlt": "Ilustração de um ambiente interno com forro e iluminação",
+  "servicos": [
+    {
+      "label": "Forros modulares em PVC e mineral",
+      "path": "/servicos/forro-modular-pvc"
+    },
+    {
+      "label": "Forro de drywall",
+      "path": "/servicos/drywall-gesso-fechamentos/forro-de-drywall"
+    }
+  ],
+  "fontes": [
+    {
+      "label": "Knauf: ficha técnica de forro removível",
+      "url": "https://knauf.com/api/download-center/v1/assets/f47113f6-cd29-458b-827d-f2c3999cba1c?download=true"
+    }
+  ],
+  "conteudo": "Antes de comparar materiais, pergunte: alguém vai precisar acessar regularmente o espaço entre o teto e o forro? Se houver válvulas, fiação, equipamentos ou dutos que exigem vistoria, marque onde estão e com que frequência são atendidos.\n\n### Quando faz sentido avaliar placas removíveis\nUm sistema modular removível permite abrir pontos do entreforro, quando o sistema e a montagem foram projetados para isso. É um critério útil em uma clínica ou loja que precisa acessar instalações com frequência. Confirme quais placas são realmente removíveis, como os equipamentos serão apoiados e onde manter peças de reposição. Não assuma que todo forro em PVC é removível.\n\n### Quando o acabamento contínuo pesa mais\nEm um sistema fixo de drywall, o acabamento pode formar uma superfície contínua. Planeje com antecedência alçapões nos pontos em que haverá manutenção e defina os recortes de luminárias, grelhas e outros elementos. Informe se já existem desníveis ou se há limite para rebaixar o teto.\n\n### Como comparar duas propostas sem comparar escopos diferentes\n- Envie medidas aproximadas, fotos do teto atual e planta, se houver.\n- Marque luminárias, dutos e equipamentos e explique quem coordena as respectivas instalações.\n- Pergunte se a proposta inclui perfis, recortes, acabamentos, alçapões, proteção do piso e retirada de sobras.\n- Informe as restrições de horário e se a obra deve ocorrer com a equipe ou clientes no local.\n\n### Qual tem melhor isolamento acústico?\nNão há resposta só pelo nome do forro. Se esse for o objetivo, descreva se o problema é eco dentro da sala ou som vindo do ambiente vizinho. A avaliação considera o conjunto e os caminhos do som, não apenas a placa. Peça que a proposta deixe claro qual problema a solução pretende tratar."
+},
+{
+  "slug": "planejar-divisorias-para-loja-em-funcionamento",
+  "titulo": "Como planejar divisórias em uma loja que continua funcionando",
+  "resumo": "Organize fases da obra, rotas de clientes e itens do orçamento antes de instalar divisórias em um comércio em funcionamento.",
+  "data": "20/11/2026",
+  "dataISO": "2026-11-20",
+  "tempoLeitura": "3 min de leitura",
+  "categoria": "Divisórias comerciais",
+  "imagem": "/imagens/drywall/paredes-1200.png",
+  "imagemAlt": "Ilustração de parede divisória em ambiente interno",
+  "servicos": [
+    {
+      "label": "Divisórias comerciais",
+      "path": "/servicos/divisorias-comerciais"
+    },
+    {
+      "label": "Divisórias em drywall",
+      "path": "/servicos/drywall-gesso-fechamentos/divisorias-em-drywall"
+    }
+  ],
+  "fontes": [
+    {
+      "label": "Ministério da Justiça: guia de boas práticas de acessibilidade",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/consumidor/defesadoconsumidor/Biblioteca/conteudos-diversos-upload/programa-de-responsabilidade-social-e-inclusao_v10-sem-logo.pdf"
+    }
+  ],
+  "conteudo": "A melhor hora de organizar a obra é antes de mover a primeira gôndola. Faça um esboço simples com a porta da loja, o caixa, os trajetos dos clientes, o estoque e a entrada de entregas. Mostre também o ponto em que a divisória começa e termina.\n\n### Separe obra e atendimento\n- Identifique a entrada e os corredores que precisam permanecer livres e acessíveis.\n- Combine uma área de trabalho isolada e um local para guardar materiais sem bloquear a circulação.\n- Marque os períodos de menor movimento e pergunte quais etapas podem acontecer neles.\n- Defina quem orienta a equipe e os clientes caso o percurso ou o horário precise mudar.\n\n### Faça a escolha pelo uso do espaço\nSe você pretende reconfigurar o ponto no futuro, pergunte sobre sistemas desmontáveis e quais partes podem ser reaproveitadas. Se precisar de um fechamento contínuo para separar atendimento e estoque, avalie também o drywall. Antes de decidir, diga se a parede vai receber prateleiras, placas, portas ou equipamentos: peso, posição e reforços fazem parte da conversa.\n\n### O que conferir antes de fechar o orçamento\nPeça que a proposta separe levantamento, materiais, perfis, portas, acabamento, proteção do mobiliário, limpeza e retirada de sobras. Informe se existe administração do edifício ou do shopping, limitação de ruído e horários permitidos para entrega. Combine como a obra será retomada se uma fase não puder ser liberada no horário previsto.\n\n### Dá para garantir que a loja não precise fechar?\nNão antes de avaliar o local e a segurança de quem circula. Uma obra por fases pode ser possível, mas às vezes é melhor reservar um período sem público para uma etapa específica. Se o projeto alterar rotas acessíveis, saídas ou instalações essenciais, busque a orientação de um profissional responsável antes de executar."
+},
   {
     slug: "tipos-de-divisorias-para-escritorios",
     titulo: "Tipos de Divisórias para Escritórios em Curitiba: Guia Completo 2026",

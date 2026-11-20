@@ -1,3 +1,10 @@
+import { StaticRouter } from 'react-router-dom/server';
+import { Route, Routes } from 'react-router-dom';
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import { ArticlesPage } from '../pages/ArticlesPage';
+import { ArticleDetail } from '../pages/ArticleDetail';
+import { ARTICLES } from '../constants';
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { HelmetProvider, type HelmetServerState } from 'react-helmet-async';
@@ -34,3 +41,18 @@ for (const {path, file, service} of routes) {
   writeFileSync('dist' + destination, html, 'utf8');
 }
 console.log('Validated and prerendered ' + routes.length + ' Decorart drywall routes');
+
+const articleRoutes = [{path:'/artigos', file:'central', article: undefined}, ...ARTICLES.map(article => ({path:'/artigos/' + article.slug, file:article.slug, article}))];
+mkdirSync('dist/_artigos',{recursive:true});
+for (const {path,file,article} of articleRoutes) {
+  const context = {} as {helmet: HelmetServerState};
+  const body = renderToStaticMarkup(<HelmetProvider context={context}><StaticRouter location={path}><div className="flex flex-col min-h-screen"><Header /><main className="flex-grow"><Routes><Route path="/artigos" element={<ArticlesPage />} /><Route path="/artigos/:slug" element={<ArticleDetail />} /></Routes></main><Footer /></div></StaticRouter></HelmetProvider>);
+  const head = [context.helmet.title,context.helmet.meta,context.helmet.link,context.helmet.script].map(item=>item.toString()).join('\n');
+  const canonical = 'https://www.decorartdivisorias.com.br' + path;
+  const destination = '/_artigos/' + file + '.html';
+  if (!head.includes('href="' + canonical + '"') || !sitemap.includes('<loc>' + canonical + '</loc>') || !rewriteRules.some(rule=>rule.source===path && rule.destination===destination) || (body.match(/<h1(?:>| )/g)||[]).length!==1) throw new Error('Blog SEO, route or heading mismatch: ' + path);
+  if(article?.imagemAlt && !existsSync('dist'+article.imagem)) throw new Error('Missing article illustration: '+path);
+  const html = htmlWithoutTitle.replace('</head>', head + '\n</head>').replace('<div id="root"></div>', () => '<div id="root">' + body + '</div>');
+  writeFileSync('dist'+destination,html,'utf8');
+}
+console.log('Validated and prerendered ' + articleRoutes.length + ' Decorart blog routes');

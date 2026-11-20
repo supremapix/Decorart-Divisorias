@@ -14,7 +14,7 @@ export const ArticlesPage: React.FC = () => {
       <EnhancedSEO 
         title="Guia de Divisórias em Curitiba: Artigos e Dicas | Decorart"
         description="Aprenda a escolher divisórias para escritórios, clínicas e empresas em Curitiba. Guias técnicos sobre Eucatex, Drywall, custos e instalação."
-        canonical="/artigos"
+        canonical="https://www.decorartdivisorias.com.br/artigos"
       />
 
       {/* Hero Header Elegante */}
@@ -33,14 +33,14 @@ export const ArticlesPage: React.FC = () => {
             <BookOpen size={18} className="mr-2" /> CONTEÚDO TÉCNICO
           </div>
           <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight"
           >
-            Guias & Artigos Sobre Divisórias
+            Blog da Decorart: divisórias e forros
           </motion.h1>
           <motion.p 
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15 }}
             className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed"
@@ -50,14 +50,21 @@ export const ArticlesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Grid de Artigos */}
+      <section aria-labelledby="blog-ambientes" className="container mx-auto px-4 md:px-6 py-8">
+        <h2 id="blog-ambientes" className="mb-3 text-2xl font-bold text-slate-900">Escolha pelo ambiente</h2>
+        <ul className="flex flex-col md:flex-row gap-4 text-blue-900 underline">
+          <li><Link to="/servicos/divisorias-escritorio">Escritórios e salas de reunião</Link></li>
+          <li><Link to="/servicos/divisorias-comerciais">Lojas e atendimento ao público</Link></li>
+          <li><Link to="/servicos/forro-modular-pvc">Forros para áreas comerciais</Link></li>
+        </ul>
+      </section>
       <section className="py-20 md:py-28 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {ARTICLES.map((article, idx) => (
               <motion.article 
-                key={idx}
-                initial={{ opacity: 0, y: 25 }}
+                key={article.slug}
+                initial={false}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
@@ -66,7 +73,7 @@ export const ArticlesPage: React.FC = () => {
                 <div className="h-60 overflow-hidden relative">
                   <SafeImage 
                     src={article.imagem} 
-                    alt={article.titulo} 
+                    alt={article.imagemAlt ?? article.titulo} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <span className="absolute top-4 left-4 bg-slate-900 text-gold px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg border border-gold/30">

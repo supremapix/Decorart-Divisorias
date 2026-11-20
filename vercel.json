@@ -69,6 +69,34 @@
       "destination": "/_drywall/revestimentos-para-construcao-a-seco.html"
     },
     {
+      "source": "/artigos",
+      "destination": "/_artigos/central.html"
+    },
+    {
+      "source": "/artigos/forro-modular-ou-drywall",
+      "destination": "/_artigos/forro-modular-ou-drywall.html"
+    },
+    {
+      "source": "/artigos/planejar-divisorias-para-loja-em-funcionamento",
+      "destination": "/_artigos/planejar-divisorias-para-loja-em-funcionamento.html"
+    },
+    {
+      "source": "/artigos/tipos-de-divisorias-para-escritorios",
+      "destination": "/_artigos/tipos-de-divisorias-para-escritorios.html"
+    },
+    {
+      "source": "/artigos/como-escolher-divisorias-para-empresas",
+      "destination": "/_artigos/como-escolher-divisorias-para-empresas.html"
+    },
+    {
+      "source": "/artigos/divisoria-eucatex-ou-drywall",
+      "destination": "/_artigos/divisoria-eucatex-ou-drywall.html"
+    },
+    {
+      "source": "/artigos/quanto-custa-instalar-divisorias-curitiba",
+      "destination": "/_artigos/quanto-custa-instalar-divisorias-curitiba.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

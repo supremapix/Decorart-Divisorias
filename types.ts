@@ -43,6 +43,10 @@ export interface Article {
   conteudo: string;
   data: string;
   imagem: string;
+  dataISO?: string;
+  imagemAlt?: string;
+  servicos?: {label: string; path: string}[];
+  fontes?: {label: string; url: string}[];
   tempoLeitura: string;
   categoria: string;
 }

@@ -71,6 +71,46 @@ export const SERVICES: Service[] = [
 
 export const ARTICLES: Article[] = [
 {
+  "slug": "historia-do-gesso-e-das-sancas",
+  "titulo": "A história das sancas: dos tetos ornamentados à luz indireta",
+  "resumo": "Conheça a história do gesso decorativo e como as sancas ganharam uma nova função com a iluminação indireta. Veja quando vale adotar a solução.",
+  "data": "22/11/2026",
+  "dataISO": "2026-11-22",
+  "tempoLeitura": "5 min de leitura",
+  "categoria": "História e design",
+  "imagem": "/assets/img/blog/historia-gesso-sanca-hero.webp",
+  "imagemAlt": "Teto clássico com relevos em gesso, cornija ornamentada e luz natural",
+  "conteudo": "### Por que hoje se fala em sanca de luz?\nEm interiores, sanca é um detalhe moldado ou construído no encontro entre parede e teto ou em um recorte do forro. Pode ser fechada, com acabamento liso, ou prever um vão para a luz refletir no teto ou na parede. Rebaixar o teto, por si só, não cria uma sanca: um forro plano também pode ser rebaixado.\n\nNo teto ornamentado, a luz e a sombra revelam o desenho da moldura. Numa sanca iluminada, o detalhe construtivo orienta a luz para outra superfície. Não houve uma troca de um estilo pelo outro: os dois continuam possíveis.\n\n### Uma curiosidade: o ornamento nem sempre era só gesso\nDocumentos de conservação registram revestimentos históricos feitos com cal, por vezes reforçados com pelos ou fibras vegetais. A composição mudava conforme a época, o lugar e o acabamento. A ligação com os tetos modernos é o cuidado com o relevo e as sombras, não a repetição exata da técnica antiga.\n\n### O que a iluminação indireta resolve (e o que não resolve)\n- **Sala de estar:** a luz rebatida suaviza contrastes e ajuda a criar um ambiente confortável para conversar. Para leitura, uma luminária direcionada costuma ser mais útil que aumentar a fita de LED.\n- **Loja ou recepção:** a sanca pode destacar uma parede ou marcar o caminho de entrada. Combine com luz direcionada se a intenção for realçar produtos, materiais ou sinalização.\n- **Escritório:** um forro liso com iluminação bem distribuída pode ser mais útil que uma sanca, especialmente quando é preciso ter acesso frequente às instalações acima do teto.\n\n### Três decisões antes de fechar o forro\n1. **Defina a função da luz.** É para orientar o caminho, valorizar uma parede ou complementar a iluminação principal? A resposta orienta o desenho da sanca antes de escolher a fita.\n2. **Faça um teste de canto.** Veja a fita e o perfil acesos, de pé e sentado, para conferir se os pontos de LED aparecem. Observe como a cor do teto muda a luz refletida.\n3. **Planeje manutenção e acesso.** Combine com a equipe o local da fonte de alimentação e dos pontos de inspeção antes do fechamento. Assim, uma troca não precisa começar com a abertura do forro.\n\n### A sanca precisa ocupar o teto inteiro?\nNão. Uma linha em apenas uma parede pode resolver a composição, por exemplo atrás da área de recepção. Quando o teto já tem pouca altura, vale comparar com uma luminária de parede ou um perfil aparente.\n\n### Sanca substitui a iluminação geral?\nEm geral, não. Luz rebatida funciona bem para ambientação, mas locais de leitura, trabalho e exposição podem precisar de luz direta. Faça o teste no ambiente com as outras luminárias ligadas e desligadas.\n\n### Placa de drywall é igual a moldura de gesso?\nNão. A placa integra um sistema de forro com estrutura e tratamento de juntas. A moldura é uma peça de acabamento. É possível obter um resultado visual parecido com técnicas diferentes, então confirme qual solução o orçamento inclui.",
+  "servicos": [
+    {
+      "label": "Sancas de gesso em Curitiba",
+      "path": "/servicos/drywall-gesso-fechamentos/sancas-de-gesso"
+    },
+    {
+      "label": "Sancas com iluminação LED",
+      "path": "/servicos/drywall-gesso-fechamentos/sancas-com-iluminacao-led"
+    },
+    {
+      "label": "Forro modular ou drywall",
+      "path": "/artigos/forro-modular-ou-drywall"
+    }
+  ],
+  "fontes": [
+    {
+      "label": "Historic England: história e conservação do gesso fibroso",
+      "url": "https://historicengland.org.uk/whats-new/research/back-issues/an-overlooked-heritage-fibrous-plaster-in-the-united-kingdom/"
+    },
+    {
+      "label": "Departamento para Comunidades da Irlanda do Norte: revestimentos históricos",
+      "url": "https://www.communities-ni.gov.uk/ga/articles/technical-note-historic-internal-wall-finishes"
+    },
+    {
+      "label": "Prêmio Nobel de Física de 2014: do LED azul à iluminação branca",
+      "url": "https://www.nobelprize.org/uploads/2018/06/advanced-physicsprize2014.pdf"
+    }
+  ]
+},
+{
   "slug": "forro-modular-ou-drywall",
   "titulo": "Forro modular ou drywall? Compare acesso e acabamento",
   "resumo": "Saiba quando priorizar acesso ao entreforro ou acabamento contínuo e o que informar no orçamento para sua loja, clínica ou escritório.",
@@ -314,4 +354,5 @@ export const CIDADES: string[] = [
   "Fazenda Rio Grande", "Campo Largo", "Campina Grande do Sul", "Almirante Tamandaré", 
   "Quatro Barras", "Piraquara", "Campo Magro", "Balsa Nova", "Contenda", "Mandirituba"
 ];
+
 

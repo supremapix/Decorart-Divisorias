@@ -1,3 +1,4 @@
+import { SancaTimeline } from './SancaTimeline';
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { ARTICLES, BUSINESS_INFO } from '../constants';
@@ -16,6 +17,7 @@ export const ArticleDetail: React.FC = () => {
 
   const canonicalOrigin = 'https://www.decorartdivisorias.com.br';
   const currentCanonical = `${canonicalOrigin}/artigos/${article.slug}`;
+  const isSanca = article.slug === 'historia-do-gesso-e-das-sancas';
   const imageUrl = new URL(article.imagem, canonicalOrigin).href;
 
   return (
@@ -25,7 +27,7 @@ export const ArticleDetail: React.FC = () => {
         description={article.resumo}
         canonical={currentCanonical}
         image={imageUrl}
-        imageDimensions={article.imagemAlt ? {width: 1200, height: 800, mimeType: 'image/png'} : undefined}
+        imageDimensions={article.imagemAlt ? {width: 1200, height: isSanca ? 675 : 800, mimeType: isSanca ? 'image/webp' : 'image/png'} : undefined}
         type="article"
         jsonLd={{
           "@context": "https://schema.org",
@@ -78,6 +80,7 @@ export const ArticleDetail: React.FC = () => {
         }}
       />
 
+
       {/* Header do Artigo */}
       <section className="bg-blue-950 py-16 text-white relative">
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
@@ -101,15 +104,16 @@ export const ArticleDetail: React.FC = () => {
           <div className="grid grid-cols-1 gap-12">
             
             <div className="space-y-8">
-              <div className="rounded-3xl overflow-hidden shadow-2xl h-80 bg-gray-100">
-                <SafeImage 
+              <div className={`rounded-3xl overflow-hidden shadow-2xl bg-gray-100 ${isSanca ? 'aspect-video' : 'h-80'}`}>
+                {isSanca ? <img src={article.imagem} alt={article.imagemAlt} width={1200} height={675} className="w-full h-full object-cover" /> : <SafeImage 
                   src={article.imagem} 
                   alt={article.imagemAlt ?? article.titulo} 
                   className="w-full h-full object-cover"
-                />
+                />}
               </div>
 
               {article.imagemAlt && <p className="text-sm text-slate-600">Imagem ilustrativa gerada por IA.</p>}
+              {isSanca && <><p className="text-lg font-semibold text-blue-950">{article.resumo}</p><SancaTimeline /></>}
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
                 {article.conteudo.split('\n\n').map((block, idx) => {
                   const lines = block.split('\n');
@@ -131,9 +135,9 @@ export const ArticleDetail: React.FC = () => {
 
               {/* Callout Box */}
               <div className="bg-blue-50 border-2 border-gold/30 p-8 rounded-3xl mt-12 text-blue-950">
-                <h4 className="text-xl font-black uppercase mb-3 text-blue-950">Precisa de Divisórias para sua Empresa em Curitiba?</h4>
+                <h2 className="text-xl font-black uppercase mb-3 text-blue-950">{isSanca ? 'Planejando um forro ou uma sanca em Curitiba?' : 'Precisa de divisórias para sua empresa em Curitiba?'}</h2>
                 <p className="text-gray-600 mb-6">
-                  A Decorart Divisórias oferece fornecimento e instalação rápida de divisórias modulares de Eucatex e Drywall para escritórios, clínicas e comércios.
+                  {isSanca ? 'Envie as medidas e uma foto do teto. Diga se você quer destacar uma parede ou complementar a luz do ambiente. Isso ajuda a equipe a entender o que o projeto precisa.' : 'A Decorart Divisórias fornece e instala divisórias modulares de Eucatex e drywall para escritórios, clínicas e comércios.'}
                 </p>
                 <a 
                   href={BUSINESS_INFO.whatsapp} 
@@ -167,3 +171,4 @@ export const ArticleDetail: React.FC = () => {
     </div>
   );
 };
+

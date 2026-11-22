@@ -52,7 +52,16 @@ for (const {path,file,article} of articleRoutes) {
   const destination = '/_artigos/' + file + '.html';
   if (!head.includes('href="' + canonical + '"') || !sitemap.includes('<loc>' + canonical + '</loc>') || !rewriteRules.some(rule=>rule.source===path && rule.destination===destination) || (body.match(/<h1(?:>| )/g)||[]).length!==1) throw new Error('Blog SEO, route or heading mismatch: ' + path);
   if(article?.imagemAlt && !existsSync('dist'+article.imagem)) throw new Error('Missing article illustration: '+path);
+  if (file === 'historia-do-gesso-e-das-sancas') {
+    const images = [...body.matchAll(/src="(\/assets\/img\/blog\/historia-gesso-sanca-[^"]+)"/g)].map(match => match[1]);
+    if (new Set(images).size !== 2 || images.some(image => !existsSync('dist' + image)) ||
+      !head.includes('max-image-preview:large') || !head.includes('image/webp') || !head.includes('og:image:width" content="1200"') ||
+      !body.includes('prefers-reduced-motion') || !body.includes('Três momentos na história do teto')) {
+      throw new Error('Sanca article editorial checks failed');
+    }
+  }
   const html = htmlWithoutTitle.replace('</head>', head + '\n</head>').replace('<div id="root"></div>', () => '<div id="root">' + body + '</div>');
   writeFileSync('dist'+destination,html,'utf8');
 }
 console.log('Validated and prerendered ' + articleRoutes.length + ' Decorart blog routes');
+

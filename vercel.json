@@ -97,8 +97,13 @@
       "destination": "/_artigos/quanto-custa-instalar-divisorias-curitiba.html"
     },
     {
+      "source": "/artigos/historia-do-gesso-e-das-sancas",
+      "destination": "/_artigos/historia-do-gesso-e-das-sancas.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
 }
+

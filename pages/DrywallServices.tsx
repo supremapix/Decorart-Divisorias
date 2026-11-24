@@ -7,10 +7,23 @@ import { DRYWALL_BASE, DRYWALL_SITE, DRYWALL_SERVICES, DRYWALL_THEMES, DRYWALL_W
 const hubTitle = 'Drywall, gesso e sistemas de fechamento';
 const hubIntro = 'Consulte paredes e divisórias, forros, sancas, isolamento acústico e térmico, fechamentos externos e tratamento de juntas em Curitiba e Região Metropolitana.';
 const themes = Object.entries(DRYWALL_THEMES) as [DrywallTheme, typeof DRYWALL_THEMES[DrywallTheme]][];
-type ArtKey = DrywallTheme | 'cimenticia';
-const imagePath = (theme: ArtKey, width = 1200) => '/imagens/drywall/' + (theme === 'sancas' ? 'forros' : theme) + '-' + width + '.png';
-const imageAlt = (theme: ArtKey) => theme === 'cimenticia' ? 'Ilustração de fechamento com placas cimentícias sobre estrutura de suporte' : theme === 'forros' || theme === 'sancas' ? 'Ilustração de teto de gesso com rebaixo e iluminação indireta' : DRYWALL_THEMES[theme].alt;
-const heroArt = (service?: DrywallService): ArtKey => service?.slug === 'fechamento-com-placas-cimenticias' ? 'cimenticia' : service?.theme || 'paredes';
+const specificArt = {
+  'forro-plano': 'Forro de gesso plano em uma sala de trabalho, com luminárias lineares aparentes e uma tampa de acesso rente ao teto',
+  'revestimento-interno': 'Parede interna parcialmente revestida com placas claras, com a alvenaria existente ainda visível ao lado',
+} as const;
+type ArtKey = DrywallTheme | 'cimenticia' | keyof typeof specificArt;
+const isSpecificArt = (theme: ArtKey): theme is keyof typeof specificArt =>
+  theme === 'forro-plano' || theme === 'revestimento-interno';
+const imagePath = (theme: ArtKey, width = 1200) => '/imagens/drywall/' + (theme === 'sancas' ? 'forros' : theme) + '-' + width + (isSpecificArt(theme) ? '.webp' : '.png');
+const imageAlt = (theme: ArtKey) => isSpecificArt(theme) ? specificArt[theme] : theme === 'cimenticia' ? 'Ilustração de fechamento com placas cimentícias sobre estrutura de suporte' : theme === 'forros' || theme === 'sancas' ? 'Ilustração de teto de gesso com rebaixo e iluminação indireta' : DRYWALL_THEMES[theme].alt;
+const heroArt = (service?: DrywallService): ArtKey => {
+  switch (service?.slug) {
+    case 'forro-de-drywall': return 'forro-plano';
+    case 'revestimentos-para-construcao-a-seco': return 'revestimento-interno';
+    case 'fechamento-com-placas-cimenticias': return 'cimenticia';
+    default: return service?.theme || 'paredes';
+  }
+};
 const label = 'Orçamento de drywall e gesso pelo WhatsApp';
 const panel = 'rounded-2xl border border-slate-200 bg-white p-5 sm:p-6';
 const linkFocus = 'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600';
